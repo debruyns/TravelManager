@@ -1,0 +1,321 @@
+
+// Stylesheet for Authentication pages
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    outline: none;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background: #FEFEFE;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #363C48;
+}
+
+header > img {
+  width: 40%;
+  max-width: 250px;
+  height: auto;
+}
+
+div#login-form {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+div#login-form > h3 {
+    font-weight: normal;
+    color: #363C48;
+    font-size: 12pt;
+    margin-bottom: 20px;
+}
+
+div#login-form > button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 0px;
+    background: #6DC234;
+    color: #FFFFFF;
+    font-size: 8pt;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+div#login-form > button:hover {
+    background: #529128;
+    cursor: pointer;
+}
+
+div#login-form > button.green {
+    display: inline;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 0px;
+    background: #6DC234;
+    color: #FFFFFF;
+    font-size: 8pt;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+div#login-form > button.green:hover {
+    background: #529128;
+    cursor: pointer;
+}
+
+div#login-form > button.red {
+    display: inline;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 0px;
+    background: #F24141;
+    color: #FFFFFF;
+    font-size: 8pt;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+div#login-form > button.red:hover {
+    background: #D62F2F;
+    cursor: pointer;
+}
+
+.error-message {
+    display: none;
+    width: 70%;
+    max-width: 400px;
+    height: auto;
+    border: 2px #BB583D solid;
+    color: #BB583D;
+    font-size: 7pt;
+    border-radius: 5px;
+    background: #FFEBE8;
+    padding: 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.success-message {
+    display: none;
+    width: 70%;
+    max-width: 400px;
+    height: auto;
+    border: 2px #66A56C solid;
+    color: #66A56C;
+    font-size: 9pt;
+    border-radius: 5px;
+    background: #B5E2B9;
+    padding: 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.success-message > a:link, .success-message > a:visited {
+  color: #66A56C;
+}
+
+.success-message > a:hover {
+  text-decoration: none;
+}
+
+.success-message-show {
+    display: block;
+    width: 70%;
+    max-width: 400px;
+    height: auto;
+    border: 2px #66A56C solid;
+    color: #66A56C;
+    font-size: 9pt;
+    border-radius: 5px;
+    background: #B5E2B9;
+    padding: 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.error-message-show {
+    display: block;
+    width: 70%;
+    max-width: 400px;
+    height: auto;
+    border: 2px #BB583D solid;
+    color: #BB583D;
+    font-size: 7pt;
+    border-radius: 5px;
+    background: #FFEBE8;
+    padding: 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-element {
+    display: block;
+    width: 70%;
+    max-width: 400px;
+    height: auto;
+    border: 2px #EDEDED solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.form-element > label {
+    display: block;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-element > input {
+    display: block;
+    border: 0px;
+    background: transparent;
+    outline: none;
+    color: #333;
+    font-size: 8pt;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.form-element:focus-within {
+    background: #EDEDED;
+}
+
+div#login-form > div.login-link {
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+div#login-form > div.login-link > h4 {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 10pt;
+    color: #363C48;
+    font-weight: normal;
+}
+
+div#login-form > div.login-link > a:link, div#login-form > div.login-link > a:visited {
+    text-decoration: none;
+    font-size: 10pt;
+    color: #3E96BF;
+}
+
+div#login-form > div.login-link > a:hover {
+    color: #276887;
+}
+
+div#login-form > div.login-link > ul {
+    list-style-type: none;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+    display: block;
+    font-size: 0pt;
+    position: relative;
+}
+
+div#login-form > div.login-link > ul > li {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px 5px;
+    padding-top: 4px;
+    border: 2px #EDEDED solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+}
+
+div#login-form > div.login-link > ul > li:first-of-type {
+    border: 2px #EDEDED solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right-width: 1px;
+}
+
+div#login-form > div.login-link > ul > li:last-of-type {
+    border: 2px #EDEDED solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left-width: 1px;
+}
+
+div#login-form > div.login-link > ul > li > img {
+    width: 25px;
+    height: auto;
+}
+
+div#login-form > div.login-link > ul > li:hover {
+    background: #EDEDED;
+    cursor: pointer;
+}
+
+div#login-form > div.login-link > ul > li.active {
+    background: #EDEDED;
+    cursor: initial;
+}
+
+#language-tooltip {
+    display: none;
+    width: 150px;
+    height: auto;
+    background-color: #EDEDED;
+    color: #333333;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 130%;
+    left: 50%;
+    margin-left: -75px;
+    font-size: 9pt;
+}
+
+#language-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #EDEDED transparent;
+}
+
+div#copyright {
+    font-size: 8pt;
+    color: #333333;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    width: 30%;
+    text-align: center;
+}

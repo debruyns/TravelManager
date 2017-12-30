@@ -1,0 +1,14 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^home/?$    ./index.php    [NC,L]
+RewriteRule ^login/?$    ./login.php    [NC,L]
+RewriteRule ^signup/?$    ./signup.php    [NC,L]
+RewriteRule ^retrieve/?$    ./retrieve.php    [NC,L]
+RewriteRule ^authentication/?$    ./verification.php    [NC,L]
+RewriteRule ^logout/?$    ./logout.php    [NC,L]
+
+RewriteRule ^resetpassword/(.*)$ ./resetpassword.php?code=$1 [NC,L]
