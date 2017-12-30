@@ -19,8 +19,6 @@
         <link rel="stylesheet" href="https://hosted-sip.civic.com/css/civic-modal.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/login.js" type="text/javascript"></script>
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
-        <meta name="google-signin-client_id" content="1076120441052-4kvnsb7bjdunva9m7slfa3dsemm5o8mj.apps.googleusercontent.com">
     </head>
     <body>
         <header>
@@ -43,7 +41,6 @@
                 <input type="password" id="login_password" placeholder="<?= $i18n['PLACEHOLDER_PASSWORD']; ?>" />
             </div>
             <button id="login_button"><?= $i18n['BUTTON_SIGN_IN']; ?></button>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
             <div class="login-link">
                 <h4><?= $i18n['LABEL_REGISTER']; ?></h4>
                 <a href="./signup"><?= $i18n['LINKTEXT_REGISTER']; ?></a>
