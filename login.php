@@ -15,9 +15,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/auth.css" type="text/css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+        <link rel="stylesheet" href="https://hosted-sip.civic.com/css/civic-modal.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/login.js" type="text/javascript"></script>
-        <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+        <script src="https://hosted-sip.civic.com/js/civic.sip.min.js"></script>
+        <script>
+          var civicSip = new civic.sip({appId: 'CTO_TM'});
+        </script>
     </head>
     <body>
         <header>
@@ -40,6 +45,9 @@
                 <input type="password" id="login_password" placeholder="<?= $i18n['PLACEHOLDER_PASSWORD']; ?>" />
             </div>
             <button id="login_button"><?= $i18n['BUTTON_SIGN_IN']; ?></button>
+            <button id="signupButton" class="civic-button-a medium" type="button">
+              <span><?= $i18n['CIVIC_SIGNUP']; ?></span>
+            </button>
             <div class="login-link">
                 <h4><?= $i18n['LABEL_REGISTER']; ?></h4>
                 <a href="./signup"><?= $i18n['LINKTEXT_REGISTER']; ?></a>
