@@ -6,6 +6,7 @@ $i18n = array(
 
     // Login Page
 
+    "CIVIC_SIGNUP"              => "Registreren met Civic",
     "LOGIN_TITLE"               => "Travel Manager - Inloggen",
     "SIGN_IN_MESSAGE"           => "Inloggen op de CityTakeOff Travel Manager",
     "LABEL_EMAIL"               => "EMAIL",
