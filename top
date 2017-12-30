@@ -1,0 +1,54 @@
+[1mdiff --git a/includes/languages/en.language.php b/includes/languages/en.language.php[m
+[1mindex c745ced..0fe3c13 100755[m
+[1m--- a/includes/languages/en.language.php[m
+[1m+++ b/includes/languages/en.language.php[m
+[36m@@ -6,6 +6,7 @@[m [m$i18n = array([m
+ [m
+     // Login Page[m
+ [m
+[32m+[m[32m    "CIVIC_SIGNUP"                      => "Sign up with Civic",[m
+     "LOGIN_TITLE"                       => "TravelManager - Login",[m
+     "SIGN_IN_MESSAGE"                   => "Sign into the CityTakeOff TravelManager",[m
+     "LABEL_EMAIL"                       => "EMAIL",[m
+[1mdiff --git a/includes/languages/nl.language.php b/includes/languages/nl.language.php[m
+[1mindex 397d82f..1d881fe 100755[m
+[1m--- a/includes/languages/nl.language.php[m
+[1m+++ b/includes/languages/nl.language.php[m
+[36m@@ -6,6 +6,7 @@[m [m$i18n = array([m
+ [m
+     // Login Page[m
+ [m
+[32m+[m[32m    "CIVIC_SIGNUP"              => "Registreren met Civic",[m
+     "LOGIN_TITLE"               => "Travel Manager - Inloggen",[m
+     "SIGN_IN_MESSAGE"           => "Inloggen op de CityTakeOff Travel Manager",[m
+     "LABEL_EMAIL"               => "EMAIL",[m
+[1mdiff --git a/login.php b/login.php[m
+[1mindex 30bfd15..af75fe9 100755[m
+[1m--- a/login.php[m
+[1m+++ b/login.php[m
+[36m@@ -15,9 +15,14 @@[m
+         <meta charset="UTF-8">[m
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+         <link href="css/auth.css" type="text/css" rel="stylesheet" />[m
+[32m+[m[32m        <link rel="shortcut icon" type="image/png" href="images/favicon.png" />[m
+[32m+[m[32m        <link rel="stylesheet" href="https://hosted-sip.civic.com/css/civic-modal.min.css">[m
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>[m
+         <script src="js/login.js" type="text/javascript"></script>[m
+[31m-        <link rel="shortcut icon" type="image/png" href="images/favicon.png" />[m
+[32m+[m[32m        <script src="https://hosted-sip.civic.com/js/civic.sip.min.js"></script>[m
+[32m+[m[32m        <script>[m
+[32m+[m[32m          var civicSip = new civic.sip({appId: 'CTO_TM'});[m
+[32m+[m[32m        </script>[m
+     </head>[m
+     <body>[m
+         <header>[m
+[36m@@ -40,6 +45,9 @@[m
+                 <input type="password" id="login_password" placeholder="<?= $i18n['PLACEHOLDER_PASSWORD']; ?>" />[m
+             </div>[m
+             <button id="login_button"><?= $i18n['BUTTON_SIGN_IN']; ?></button>[m
+[32m+[m[32m            <button id="signupButton" class="civic-button-a medium" type="button">[m
+[32m+[m[32m              <span><?= $i18n['CIVIC_SIGNUP']; ?></span>[m
+[32m+[m[32m            </button>[m
+             <div class="login-link">[m
+                 <h4><?= $i18n['LABEL_REGISTER']; ?></h4>[m
+                 <a href="./signup"><?= $i18n['LINKTEXT_REGISTER']; ?></a>[m

@@ -45,9 +45,6 @@
                 <input type="password" id="login_password" placeholder="<?= $i18n['PLACEHOLDER_PASSWORD']; ?>" />
             </div>
             <button id="login_button"><?= $i18n['BUTTON_SIGN_IN']; ?></button>
-            <button id="signupButton" class="civic-button-a medium" type="button">
-              <span><?= $i18n['CIVIC_SIGNUP']; ?></span>
-            </button>
             <div class="login-link">
                 <h4><?= $i18n['LABEL_REGISTER']; ?></h4>
                 <a href="./signup"><?= $i18n['LINKTEXT_REGISTER']; ?></a>
