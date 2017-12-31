@@ -40,7 +40,7 @@
                 <label><?= $i18n['LABEL_PASSWORD_2']; ?></label>
                 <input type="password" id="signup_password" placeholder="<?= $i18n['PLACEHOLDER_PASSWORD_2']; ?>" />
             </div>
-            <button id="login_button"><?= $i18n['BUTTON_SIGN_UP']; ?></button>
+            <button id="login_button"><?= $i18n['BUTTON_SIGN_UP']."TEST"; ?></button>
             <div class="login-link">
                 <h4><?= $i18n['LABEL_LOGIN']; ?></h4>
                 <a href="./login"><?= $i18n['LINKTEXT_LOGIN']; ?></a>
