@@ -1,6 +1,7 @@
 <?php
     require_once 'includes/globals.inc.php';
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
