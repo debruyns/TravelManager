@@ -1,5 +1,5 @@
 <?php
-    //require_once 'includes/globals.inc.php';
+    require_once 'includes/globals.inc.php';
 ?>
 <!DOCTYPE html>
 <html>
