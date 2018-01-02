@@ -1,5 +1,5 @@
 <?php
-	
+
 	// Start a new session
 	session_start();
 
@@ -10,8 +10,8 @@
 	unset($_SESSION['USER_SECRET']);
 	unset($_SESSION['USER_PREMIUM']);
 	unset($_SESSION['USER_LANGUAGE']);
-	
+
 	// Redirect to the login page
-	header("Location: https://tm.citytakeoff.com/login?a=logout");
+	header("Location: /login?a=logout");
 
 ?>
