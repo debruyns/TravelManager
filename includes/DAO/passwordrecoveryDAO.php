@@ -147,7 +147,7 @@ class PasswordRecoveryDAO {
         $db = Connect::getConnection();
 
         try {
-            $stmt = $db->prepare("INSERT INTO PASSWORDREC (ID, USER, SECRET, CODE, VALIDUNTIL, CREATED, USED) VALUES ('', :user, :secret, :code, :validuntil, :created, '0')");
+            $stmt = $db->prepare("INSERT INTO PASSWORDREC (USER, SECRET, CODE, VALIDUNTIL, CREATED, USED) VALUES (:user, :secret, :code, :validuntil, :created, '0')");
             $stmt->bindParam(':user', $user);
             $stmt->bindParam(':secret', $secret);
             $stmt->bindParam(':code', $code);
