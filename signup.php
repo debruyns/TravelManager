@@ -19,6 +19,7 @@
         </header>
         <div id="login-form">
             <h3><?= $i18n['SIGN_UP_MESSAGE']; ?></h3>
+            <div id="success-message" class="success-message"><?= $i18n['SUCCESS_SIGNUP']; ?></div>
             <div id="error-message" class="error-message"></div>
             <div class="form-element">
                 <label><?= $i18n['LABEL_FIRSTNAME']; ?></label>

@@ -38,6 +38,7 @@ $i18n = array(
     "BUTTON_SIGN_UP"                    => "Sign Up",
     "LABEL_LOGIN"                       => "Already registered?",
     "LINKTEXT_LOGIN"                    => "Sign into your account",
+    "SUCCESS_SIGNUP"                    => "Perfect! Now check your inbox to activate your account.",
 
     // Retrieve Page
 

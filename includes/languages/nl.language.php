@@ -38,6 +38,7 @@ $i18n = array(
     "BUTTON_SIGN_UP"            => "Registreren",
     "LABEL_LOGIN"               => "Al geregistreerd?",
     "LINKTEXT_LOGIN"            => "Meld u aan met uw account",
+    "SUCCESS_SIGNUP"            => "Perfect! Kijk je inbox na om je account te activeren.",
 
     // Retrieve Page
 
