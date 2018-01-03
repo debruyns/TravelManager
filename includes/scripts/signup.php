@@ -28,6 +28,7 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['
             } else {
               $content .= "<a href='https://tm.citytakeoff.com/activateaccount/".$activationcode."'>https://tm.citytakeoff.com/activateaccount/".$activationcode."</a>";
             }
+            echo $content;
             if (sendEmailWithTemplate($created_user->getEmail(), $i18n['SIGNUP_EMAIL_SUBJECT'], $content, "CityTakeOff <noreply@citytakeoff.com>")){
               echo "SIGNUP_COMPLETE";
             } else {
