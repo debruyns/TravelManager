@@ -18,9 +18,12 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['
         if ($_POST['password'] == $_POST['confirm']){
 
           $hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
-          $new_user = UserDAO::createUser($_POST['firstname'], $_POST['lastname'], $_POST['email'], $hash);
-          echo $new_user;
-          /*if ($new_user != null){
+          $new_user_id = UserDAO::createUser($_POST['firstname'], $_POST['lastname'], $_POST['email'], $hash);
+          $created_user = null;
+          if ($new_user_id != null){
+            $created_user = UserDAO::getById($new_user_id);
+          }
+          if ($created_user != null){
             $activationcode = "".$new_user->getSecret().$new_user->getId();
             $content = $i18n['RETRIEVE_EMAIL_TITLE']." ".$user->getFirstname().",<br /><br />";
             $content .= $i18n['SIGNUP_EMAIL_CONTENT']."<br /><br />";
@@ -38,7 +41,7 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['
 
           } else {
             echo $i18n['RETRIEVE_TECH_ERROR'];
-          }*/
+          }
 
         } else {
           echo $i18n['SIGNUP_PASSWORD_MATCH'];
