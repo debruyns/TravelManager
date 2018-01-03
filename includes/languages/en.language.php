@@ -21,8 +21,8 @@ $i18n = array(
     "LOGIN_CHECK_FIELDS"                => "Email and/or password missing",
     "LOGIN_CHECK_EMAIL"                 => "There is no account for this email",
     "LOGIN_CHECK_PASSWORD"              => "Incorrect password",
-    "LOGIN_CHECK_ACTIVE"                => "Your account has not been activated. Please click the link in the registration email to activate your account.",
-    "LOGIN_CHECK_STATUS"                => "Your account has been temporarily disabled. Please contact support for more information.",
+    "LOGIN_CHECK_ACTIVE"                => "Your account has not been activated.<br />Please click the link in the registration email to activate your account.",
+    "LOGIN_CHECK_STATUS"                => "Your account has been temporarily disabled.<br />Please contact support for more information.",
     "TEXT_LOGOUT"                       => "You have successfully logged out",
 
     // Sign Up Page

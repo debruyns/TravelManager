@@ -21,8 +21,8 @@ $i18n = array(
     "LOGIN_CHECK_FIELDS"        => "Email en/of wachtwoord ontbreekt",
     "LOGIN_CHECK_EMAIL"         => "Er is geen account gevonden met dit e-mailadres",
     "LOGIN_CHECK_PASSWORD"      => "Onjuist wachtwoord",
-    "LOGIN_CHECK_ACTIVE"        => "Uw account is nog niet geactiveerd. Klik op de link in de registratie email om uw account te activeren.",
-    "LOGIN_CHECK_STATUS"        => "Uw account is tijdelijk op inactief gezet. Gelieve ons te contacteren voor meer info.",
+    "LOGIN_CHECK_ACTIVE"        => "Uw account is nog niet geactiveerd.<br />Klik op de link in de registratie email om uw account te activeren.",
+    "LOGIN_CHECK_STATUS"        => "Uw account is tijdelijk op inactief gezet.<br />Gelieve ons te contacteren voor meer info.",
     "TEXT_LOGOUT"               => "U bent succesvol uitgelogd",
 
     // Sign Up Page
