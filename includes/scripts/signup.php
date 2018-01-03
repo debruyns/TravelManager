@@ -20,7 +20,7 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['
           $hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
           $new_user = UserDAO::createUser($_POST['firstname'], $_POST['lastname'], $_POST['email'], $hash);
           if ($new_user != null){
-
+            echo $new_user->getId();
             $activationcode = "".$new_user->getSecret().$new_user->getId();
             $content = $i18n['RETRIEVE_EMAIL_TITLE']." ".$user->getFirstname().",<br /><br />";
             $content .= $i18n['SIGNUP_EMAIL_CONTENT']."<br /><br />";
