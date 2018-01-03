@@ -125,7 +125,7 @@ class UserDAO {
         $db = Connect::getConnection();
 
         try {
-            $stmt = $db->prepare("INSERT INTO USERS (FIRSTNAME, LASTNAME, EMAIL, PASSWORD, SECRET, ACTIVE, STATUS, CREATIONDATE, LASTLOGIN, PREMIUM, PREMIUMEND, LANGUAGE, DUALSTEP, DUALSTEPCODE) VALUES (:firstname, :lastname, :email, :password, :secret, '0', '1', :created, null, '0', null, :language, '0', '')");
+            $stmt = $db->prepare("INSERT INTO USERS (FIRSTNAME, LASTNAME, EMAIL, PASSWORD, SECRET, ACTIVE, STATUS, CREATIONDATE, PREMIUM, LANGUAGE, DUALSTEP, DUALSTEPCODE) VALUES (:firstname, :lastname, :email, :password, :secret, '0', '1', :created, '0', :language, '0', '')");
             $stmt->bindParam(':firstname', $firstname);
             $stmt->bindParam(':lastname', $lastname);
             $stmt->bindParam(':email', $email);
