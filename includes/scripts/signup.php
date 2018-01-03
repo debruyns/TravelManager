@@ -18,24 +18,20 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['
         if ($_POST['password'] == $_POST['confirm']){
 
           $hash = password_hash($_POST['password'], PASSWORD_BCRYPT);
-          $new_user_id = UserDAO::createUser($_POST['firstname'], $_POST['lastname'], $_POST['email'], $hash);
-          $created_user = null;
-          if ($new_user_id != null){
-            $created_user = UserDAO::getById($new_user_id);
-          }
+          $created_user = UserDAO::createUser($_POST['firstname'], $_POST['lastname'], $_POST['email'], $hash);
           if ($created_user != null){
-            $activationcode = "".$new_user->getSecret().$new_user->getId();
-            $content = $i18n['RETRIEVE_EMAIL_TITLE']." ".$user->getFirstname().",<br /><br />";
+            $activationcode = "".$created_user->getSecret().$created_user->getId();
+            $content = $i18n['RETRIEVE_EMAIL_TITLE']." ".$created_user->getFirstname().",<br /><br />";
             $content .= $i18n['SIGNUP_EMAIL_CONTENT']."<br /><br />";
             if ($_SERVER['SERVER_ADDR'] == "159.89.10.62"){
               $content .= "<a href='https://dev.citytakeoff.com/activateaccount/".$activationcode."'>https://dev.citytakeoff.com/activateaccount/".$activationcode."</a>";
             } else {
               $content .= "<a href='https://tm.citytakeoff.com/activateaccount/".$activationcode."'>https://tm.citytakeoff.com/activateaccount/".$activationcode."</a>";
             }
-            if (sendEmailWithTemplate($new_user->getEmail(), $i18n['SIGNUP_EMAIL_SUBJECT'], $content, "CityTakeOff <noreply@citytakeoff.com>")){
+            if (sendEmailWithTemplate($created_user->getEmail(), $i18n['SIGNUP_EMAIL_SUBJECT'], $content, "CityTakeOff <noreply@citytakeoff.com>")){
               echo "SIGNUP_COMPLETE";
             } else {
-              UserDAO::deleteUserByEmail($new_user->getEmail());
+              UserDAO::deleteUserByEmail($created_user->getEmail());
               echo $i18n['RETRIEVE_TECH_ERROR'];
             }
 
