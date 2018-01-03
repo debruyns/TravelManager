@@ -84,20 +84,4 @@ $(document).ready(function(){
       });
     });
 
-    $("#verification_code").keydown(function (e) {
-        // Allow: backspace, delete, tab, escape, enter and .
-        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
-             // Allow: Ctrl+A, Command+A
-            (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
-             // Allow: home, end, left, right, down, up
-            (e.keyCode >= 35 && e.keyCode <= 40)) {
-                 // let it happen, don't do anything
-                 return;
-        }
-        // Ensure that it is a number and stop the keypress
-        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-            e.preventDefault();
-        }
-    });
-
 });
