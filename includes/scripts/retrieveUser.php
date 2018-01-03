@@ -17,10 +17,12 @@ if (!empty($_POST['email'])){
         $content .= $i18n['RETRIEVE_EMAIL_CONTENT']."<br /><br />";
         if ($_SERVER['SERVER_ADDR'] == "159.89.10.62"){
           $content .= "<a href='https://dev.citytakeoff.com/resetpassword/".$recoverycode."'>https://dev.citytakeoff.com/resetpassword/".$recoverycode."</a>";
+          $sender = "CityTakeOff <noreply@dev.citytakeoff.com>";
         } else {
           $content .= "<a href='https://tm.citytakeoff.com/resetpassword/".$recoverycode."'>https://tm.citytakeoff.com/resetpassword/".$recoverycode."</a>";
+          $sender = "CityTakeOff <noreply@tm.citytakeoff.com>";
         }
-        if (sendEmailWithTemplate($user->getEmail(), $i18n['RETRIEVE_EMAIL_SUBJECT'], $content, "CityTakeOff <noreply@citytakeoff.com>")){
+        if (sendEmailWithTemplate($user->getEmail(), $i18n['RETRIEVE_EMAIL_SUBJECT'], $content, $sender)){
           echo "USER_RETRIEVED";
         } else {
           PasswordRecoveryDAO::deleteByCombination($recovery->getUser(), $recovery->getSecret(), $recovery->getCode());

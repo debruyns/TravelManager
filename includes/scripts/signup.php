@@ -25,10 +25,12 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['
             $content .= $i18n['SIGNUP_EMAIL_CONTENT']."<br /><br />";
             if ($_SERVER['SERVER_ADDR'] == "159.89.10.62"){
               $content .= "<a href='https://dev.citytakeoff.com/activateaccount/".$activationcode."'>https://dev.citytakeoff.com/activateaccount/".$activationcode."</a>";
+              $sender = "CityTakeOff <noreply@dev.citytakeoff.com>";
             } else {
               $content .= "<a href='https://tm.citytakeoff.com/activateaccount/".$activationcode."'>https://tm.citytakeoff.com/activateaccount/".$activationcode."</a>";
+              $sender = "CityTakeOff <noreply@tm.citytakeoff.com>";
             }
-            if (sendEmailWithTemplate($created_user->getEmail(), $i18n['SIGNUP_EMAIL_SUBJECT'], $content, "CityTakeOff <noreply@citytakeoff.com>")){
+            if (sendEmailWithTemplate($created_user->getEmail(), $i18n['SIGNUP_EMAIL_SUBJECT'], $content, $sender)){
               echo "SIGNUP_COMPLETE";
             } else {
               UserDAO::deleteUserByEmail($created_user->getEmail());
