@@ -125,7 +125,7 @@ class UserDAO {
         $db = Connect::getConnection();
 
         try {
-            $stmt = $db->prepare("INSERT INTO USERS (FIRSTNAME, LASTNAME, EMAIL, PASSWORD, SECRET, ACTIVE, STATUS, CREATIONDATE, LASTLOGIN, PREMIUM, PREMIUMEND, LANGUAGE, DUALSTEP, DUALSTEPCODE) VALUES (:firstname, :lastname, :email, :password, :secret, '0', '1', :created, NULL, '0', NULL, :language, '0', '')");
+            $stmt = $db->prepare("INSERT INTO USERS (FIRSTNAME, LASTNAME, EMAIL, PASSWORD, SECRET, ACTIVE, STATUS, CREATIONDATE, LASTLOGIN, PREMIUM, PREMIUMEND, LANGUAGE, DUALSTEP, DUALSTEPCODE) VALUES (:firstname, :lastname, :email, :password, :secret, '0', '1', :created, '0000-00-00 00:00:00', '0', '0000-00-00 00:00:00', :language, '0', '')");
             $stmt->bindParam(':firstname', $firstname);
             $stmt->bindParam(':lastname', $lastname);
             $stmt->bindParam(':email', $email);
@@ -134,7 +134,7 @@ class UserDAO {
             $stmt->bindParam(':created', $created);
             $stmt->bindParam(':language', $language);
             $stmt->execute();
-            return new User('', $firstname, $lastname, $email, $password, $secret, '0', '1', $created, null, '0', null, $language, '0', '');
+            return new User('', $firstname, $lastname, $email, $password, $secret, '0', '1', $created, '0000-00-00 00:00:00', '0', '0000-00-00', $language, '0', '');
         } catch (PDOException $e) {
             echo 'ERROR: ' . $e->getMessage();
             return NULL;
