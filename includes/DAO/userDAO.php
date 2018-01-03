@@ -86,7 +86,7 @@ class UserDAO {
         $db = Connect::getConnection();
 
         try {
-            $stmt = $db->prepare("DELETE USERS WHERE EMAIL=:email");
+            $stmt = $db->prepare("DELETE FROM USERS WHERE EMAIL=:email");
             $stmt->bindValue(':email', $email, PDO::PARAM_STR);
             $stmt->execute();
             return true;
