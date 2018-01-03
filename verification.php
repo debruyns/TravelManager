@@ -25,7 +25,7 @@
             <div id="error-message" class="error-message"></div>
             <div class="form-element">
                 <label><?= $i18n['LABEL_VERIFICATION']; ?></label>
-                <input type="number" id="verification_code" placeholder="<?= $i18n['PLACEHOLDER_VERIFICATION']; ?>" />
+                <input type="text" id="verification_code" maxlength="6" placeholder="<?= $i18n['PLACEHOLDER_VERIFICATION']; ?>" />
             </div>
             <button id="verification_button" class="green"><?= $i18n['BUTTON_VERIFICATION']; ?></button>
             <button id="cancel_button" class="red"><?= $i18n['BUTTON_VERIFICATION_CANCEL']; ?></button>

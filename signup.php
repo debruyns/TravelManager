@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/auth.css" type="text/css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/login.js" type="text/javascript"></script>
+        <script src="js/signup.js" type="text/javascript"></script>
         <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     </head>
     <body>
@@ -38,9 +38,9 @@
             </div>
             <div class="form-element">
                 <label><?= $i18n['LABEL_PASSWORD_2']; ?></label>
-                <input type="password" id="signup_password" placeholder="<?= $i18n['PLACEHOLDER_PASSWORD_2']; ?>" />
+                <input type="password" id="signup_password2" placeholder="<?= $i18n['PLACEHOLDER_PASSWORD_2']; ?>" />
             </div>
-            <button id="login_button"><?= $i18n['BUTTON_SIGN_UP']."TEST"; ?></button>
+            <button id="signup_button"><?= $i18n['BUTTON_SIGN_UP']; ?></button>
             <div class="login-link">
                 <h4><?= $i18n['LABEL_LOGIN']; ?></h4>
                 <a href="./login"><?= $i18n['LINKTEXT_LOGIN']; ?></a>
