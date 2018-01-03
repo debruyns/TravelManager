@@ -95,7 +95,7 @@ $(document).ready(function(){
                  return;
         }
         // Ensure that it is a number and stop the keypress
-        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
             e.preventDefault();
         }
     });
