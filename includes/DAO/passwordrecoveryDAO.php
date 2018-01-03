@@ -91,6 +91,24 @@ class PasswordRecoveryDAO {
         }
     }
 
+    // Delete by combination combination
+    public static function deleteByCombination($user, $secret, $code) {
+
+        $db = Connect::getConnection();
+
+        try {
+            $stmt = $db->prepare("DELETE PASSWORDREC WHERE USER=:user AND SECRET=:secret AND CODE=:code");
+            $stmt->bindValue(':user', $user, PDO::PARAM_INT);
+            $stmt->bindValue(':secret', $secret, PDO::PARAM_STR);
+            $stmt->bindValue(':code', $code, PDO::PARAM_STR);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            echo 'ERROR: ' . $e->getMessage();
+            return false;
+        }
+    }
+
     // Set recovery as used
     public static function setAsUsed($id) {
 

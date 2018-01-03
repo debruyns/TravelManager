@@ -80,7 +80,42 @@ class UserDAO {
         }
     }
 
-    // Create new recovery
+    // Delete user by email
+    public static function deleteUserByEmail($email) {
+
+        $db = Connect::getConnection();
+
+        try {
+            $stmt = $db->prepare("DELETE USERS WHERE EMAIL=:email");
+            $stmt->bindValue(':email', $email, PDO::PARAM_STR);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            echo 'ERROR: ' . $e->getMessage();
+            return false;
+        }
+    }
+
+    // Update last login
+    public static function updateLastLogin($id) {
+
+        $lastlogin = Date("Y-m-d H:i:s");
+
+        $db = Connect::getConnection();
+
+        try {
+            $stmt = $db->prepare("UPDATE USERS SET LASTLOGIN=:lastlogin WHERE ID=:id");
+            $stmt->bindParam(':lastlogin', $lastlogin);
+            $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            echo 'ERROR: ' . $e->getMessage();
+            return false;
+        }
+    }
+
+    // Create new user
     public static function createUser($firstname, $lastname, $email, $password) {
 
         $created = Date("Y-m-d H:i:s");

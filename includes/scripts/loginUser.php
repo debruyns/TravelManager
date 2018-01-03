@@ -36,6 +36,7 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
                       $_SESSION['USER_SECRET'] = $user->getSecret().$user->getId();
                       $_SESSION['USER_PREMIUM'] = $user->getPremium();
                       $_SESSION['USER_LANGUAGE'] = $user->getLanguage();
+                      UserDAO::updateLastLogin($user->getId());
                     }
 
                     $_SESSION['CTO_LANG'] = $user->getLanguage();

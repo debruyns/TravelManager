@@ -15,10 +15,15 @@ if (!empty($_POST['email'])){
         $recoverycode = "".$recovery->getSecret().$recovery->getCode().$recovery->getUser();
         $content = $i18n['RETRIEVE_EMAIL_TITLE']." ".$user->getFirstname().",<br /><br />";
         $content .= $i18n['RETRIEVE_EMAIL_CONTENT']."<br /><br />";
-        $content .= "<a href='https://tm.citytakeoff.com/resetpassword/".$recoverycode."'>https://tm.citytakeoff.com/resetpassword/".$recoverycode."</a>";
+        if ($_SERVER['SERVER_ADDR'] == "159.89.10.62"){
+          $content .= "<a href='https://dev.citytakeoff.com/resetpassword/".$recoverycode."'>https://dev.citytakeoff.com/resetpassword/".$recoverycode."</a>";
+        } else {
+          $content .= "<a href='https://tm.citytakeoff.com/resetpassword/".$recoverycode."'>https://tm.citytakeoff.com/resetpassword/".$recoverycode."</a>";
+        }
         if (sendEmailWithTemplate($user->getEmail(), $i18n['RETRIEVE_EMAIL_SUBJECT'], $content, "CityTakeOff <noreply@citytakeoff.com>")){
           echo "USER_RETRIEVED";
         } else {
+          PasswordRecoveryDAO::deleteByCombination($recovery->getUser(), $recovery->getSecret(), $recovery->getCode());
           echo $i18n['RETRIEVE_TECH_ERROR'];
         }
       } else {

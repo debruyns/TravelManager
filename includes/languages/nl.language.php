@@ -44,6 +44,8 @@ $i18n = array(
     "SIGNUP_EMAIL_USED"         => "Het opgegeven e-mailadres is al in gebruik",
     "SIGNUP_PASSWORD_LENGTH"    => "Het wachtwoord moet minstens 8 tekens bevatten",
     "SIGNUP_PASSWORD_MATCH"     => "De wachtwoorden komen niet overeen",
+    "SIGNUP_EMAIL_SUBJECT"      => "Activeer uw account",
+    "SIGNUP_EMAIL_CONTENT"      => "Bedankt om een account aan te maken op de CityTakeOff TravelManager.<br />Gelieve op onderstaande link te klikken om uw account te activeren.",
 
     // Retrieve Page
 

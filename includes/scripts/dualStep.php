@@ -35,6 +35,7 @@ if (!empty($_POST['code'])){
             $_SESSION['USER_SECRET'] = $user->getSecret().$user->getId();
             $_SESSION['USER_PREMIUM'] = $user->getPremium();
             $_SESSION['USER_LANGUAGE'] = $user->getLanguage();
+            UserDAO::updateLastLogin($user->getId());
 
             echo "USER_VERIFIED";
 

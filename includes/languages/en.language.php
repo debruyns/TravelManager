@@ -44,6 +44,8 @@ $i18n = array(
     "SIGNUP_EMAIL_USED"                 => "The provided email address is already used by another account",
     "SIGNUP_PASSWORD_LENGTH"            => "The password must contain at least 8 characters",
     "SIGNUP_PASSWORD_MATCH"             => "The passwords do not match",
+    "SIGNUP_EMAIL_SUBJECT"              => "Activate your account",
+    "SIGNUP_EMAIL_CONTENT"              => "Thank you for creating an account for the CityTakeOff TravelManager.<br />Please click on the link below to activate your account.",
 
     // Retrieve Page
 
@@ -58,7 +60,7 @@ $i18n = array(
     "RETRIEVE_TECH_ERROR"               => "An error has occurred, please try again",
     "RETRIEVE_EMAIL_SUBJECT"            => "Password Recovery",
     "RETRIEVE_EMAIL_TITLE"              => "Dear",
-    "RETRIEVE_EMAIL_CONTENT"            => "Click on the url below to create a new password for your account (valid for 24 hours):",
+    "RETRIEVE_EMAIL_CONTENT"            => "Click on the link below to create a new password for your account (valid for 24 hours):",
 
     // Reset Password Page
 
