@@ -85,6 +85,14 @@ $i18n = array(
     "PLACEHOLDER_VERIFICATION"          => "Vul uw 6 cijferige authenticatie code in",
     "BUTTON_VERIFICATION"               => "Verifiëren",
     "BUTTON_VERIFICATION_CANCEL"        => "Annuleren",
-    "VERIFICATION_NOT_VALID"            => "Authenticatie code niet geldig"
+    "VERIFICATION_NOT_VALID"            => "Authenticatie code niet geldig",
+
+    // Activation Page
+
+    "ACTIVATE_CODE_USED"                => "Uw account is al geactiveerd",
+    "ACTIVATE_CODE_INVALID"             => "De opgegeven activatie code is niet geldig",
+    "ACTIVATE_TITLE"                    => "TravelManager - Activeer Account",
+    "ACTIVATE_MESSAGE"                  => "Activeer uw CityTakeOff TravelManager account",
+    "ACTIVATE_SUCCESS"                  => "Uw account is succesvol geactiveerd.<br />Klik <a href='/login'>hier</a> om aan te melden."
 
 );

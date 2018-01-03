@@ -115,6 +115,22 @@ class UserDAO {
         }
     }
 
+    // Update Active
+    public static function updateActive($id) {
+
+        $db = Connect::getConnection();
+
+        try {
+            $stmt = $db->prepare("UPDATE USERS SET ACTIVE='1' WHERE ID=:id");
+            $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            echo 'ERROR: ' . $e->getMessage();
+            return false;
+        }
+    }
+
     // Create new user
     public static function createUser($firstname, $lastname, $email, $password) {
 

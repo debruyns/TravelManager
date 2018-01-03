@@ -85,6 +85,14 @@ $i18n = array(
     "PLACEHOLDER_VERIFICATION"          => "Enter your 6-digit authentication code",
     "BUTTON_VERIFICATION"               => "Verify",
     "BUTTON_VERIFICATION_CANCEL"        => "Cancel",
-    "VERIFICATION_NOT_VALID"            => "Authentication code not valid"
+    "VERIFICATION_NOT_VALID"            => "Authentication code not valid",
+
+    // Activation Page
+
+    "ACTIVATE_CODE_USED"                => "Your account has already been activated",
+    "ACTIVATE_CODE_INVALID"             => "The provided activation code is not valid",
+    "ACTIVATE_TITLE"                    => "TravelManager - Activate Account",
+    "ACTIVATE_MESSAGE"                  => "Activate your CityTakeOff TravelManager account",
+    "ACTIVATE_SUCCESS"                  => "Your account has been successfully activated.<br />Click <a href='/login'>here</a> to sign in."
 
 );

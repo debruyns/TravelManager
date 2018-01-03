@@ -157,6 +157,14 @@ div#login-form > button.red:hover {
     margin-top: 10px;
 }
 
+.success-message-show > a:link, .success-message-show > a:visited {
+  color: #66A56C;
+}
+
+.success-message-show > a:hover {
+  text-decoration: none;
+}
+
 .error-message-show {
     display: block;
     width: 70%;
