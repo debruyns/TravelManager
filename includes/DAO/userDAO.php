@@ -134,8 +134,7 @@ class UserDAO {
             $stmt->bindParam(':created', $created);
             $stmt->bindParam(':language', $language);
             $stmt->execute();
-            //return new User($db->lastInsertId(), $firstname, $lastname, $email, $password, $secret, '0', '1', $created, null, '0', null, $language, '0', '');
-            return "Yes";
+            return new User($db->lastInsertId(), $firstname, $lastname, $email, $password, $secret, '0', '1', $created, null, '0', null, $language, '0', '');
         } catch (PDOException $e) {
             echo 'ERROR: ' . $e->getMessage();
             return NULL;
