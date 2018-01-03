@@ -154,7 +154,7 @@ class PasswordRecoveryDAO {
             $stmt->bindParam(':validuntil', $validuntil);
             $stmt->bindParam(':created', $created);
             $stmt->execute();
-            return new PasswordRecovery('', $user, $secret, $code, $validuntil);
+            return new PasswordRecovery($db->lastInsertId(), $user, $secret, $code, $validuntil);
         } catch (PDOException $e) {
             echo 'ERROR: ' . $e->getMessage();
             return NULL;
