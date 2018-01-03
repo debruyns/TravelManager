@@ -39,6 +39,11 @@ $i18n = array(
     "LABEL_LOGIN"               => "Al geregistreerd?",
     "LINKTEXT_LOGIN"            => "Meld u aan met uw account",
     "SUCCESS_SIGNUP"            => "Perfect! Kijk je inbox na om je account te activeren.",
+    "SIGNUP_CHECK_FIELDS"       => "Gelieve alle velden in te vullen",
+    "SIGNUP_EMAIL_VALID"        => "Het opgegeven e-mailadres is niet geldig",
+    "SIGNUP_EMAIL_USED"         => "Het opgegeven e-mailadres is al in gebruik",
+    "SIGNUP_PASSWORD_LENGTH"    => "Het wachtwoord moet minstens 8 tekens bevatten",
+    "SIGNUP_PASSWORD_MATCH"     => "De wachtwoorden komen niet overeen",
 
     // Retrieve Page
 

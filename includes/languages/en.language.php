@@ -39,6 +39,11 @@ $i18n = array(
     "LABEL_LOGIN"                       => "Already registered?",
     "LINKTEXT_LOGIN"                    => "Sign into your account",
     "SUCCESS_SIGNUP"                    => "Perfect! Now check your inbox to activate your account.",
+    "SIGNUP_CHECK_FIELDS"               => "Please fill in all fields",
+    "SIGNUP_EMAIL_VALID"                => "The provided email address is not valid",
+    "SIGNUP_EMAIL_USED"                 => "The provided email address is already used by another account",
+    "SIGNUP_PASSWORD_LENGTH"            => "The password must contain at least 8 characters",
+    "SIGNUP_PASSWORD_MATCH"             => "The passwords do not match",
 
     // Retrieve Page
 
