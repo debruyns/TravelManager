@@ -19,6 +19,11 @@ header {
   height: 60px;
   background: #363C48;
   position: relative;
+  line-height: 60px;
+  text-align: center;
+  font-size: 11pt;
+  color: #FEFEFE;
+  text-transform: uppercase;
 }
 
 header > img.logo {

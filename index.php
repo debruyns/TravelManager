@@ -20,6 +20,7 @@
       <header>
         <img src="images/logo.png" class="logo" />
         <a class="user-control" href="/account"><img src="images/account.png" /><?php echo strtoupper($_SESSION['USER_FULLNAME']); ?></a>
+        DASHBOARD
       </header>
     </body>
 </html>
