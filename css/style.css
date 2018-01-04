@@ -71,10 +71,10 @@ header > span::after {
   content: "";
   display: inline-block;
   /* By using an em scale, the arrows will size with the font */
-  width: 0.4em;
-  height: 0.4em;
-  border-right: 0.2em solid #FEFEFE;
-  border-top: 0.2em solid #FEFEFE;
-  transform: rotate(45deg);
-  margin-right: 0.5em;
+  width: 10px;
+  height: 10px;
+  border-right: 5px solid #FEFEFE;
+  border-top: 5px solid #FEFEFE;
+  transform: rotate(90deg);
+  margin-left: 5px;
 }
