@@ -67,14 +67,12 @@ header > a.user-control > img {
 
 header > span::after {
   position: relative;
-  /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
   content: "";
   display: inline-block;
-  /* By using an em scale, the arrows will size with the font */
-  width: 6px;
-  height: 6px;
-  border-right: 3px solid #FEFEFE;
-  border-top: 3px solid #FEFEFE;
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.2em solid #FEFEFE;
+  border-top: 0.2em solid #FEFEFE;
   transform: rotate(135deg);
   margin-left: 5px;
 }
