@@ -68,7 +68,7 @@ header > a.user-control > img {
 header > div#menu-arrow {
   position: absolute;
   left: 50%;
-  bottom: 5px;
+  bottom: 10px;
   margin-left: -3px;
   content: "";
   display: inline-block;
