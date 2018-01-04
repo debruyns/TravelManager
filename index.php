@@ -21,7 +21,7 @@
         <img src="images/logo.png" class="logo" />
         <a class="user-control" href="/account">
           <img src="images/account.png" />
-          <?php if ($mobile_device == false) { echo strtoupper($_SESSION['USER_FULLNAME']); } ?>
+          <?php if ($mobile_device == false) { echo "<span>".strtoupper($_SESSION['USER_FULLNAME'])."</span>"; } ?>
         </a>
         DASHBOARD
       </header>

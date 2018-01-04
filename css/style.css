@@ -54,10 +54,13 @@ header > a.user-control:hover {
   cursor: pointer;
 }
 
+header > a.user-control > span {
+  margin-left: 10px;
+}
+
 header > a.user-control > img {
   width: 20px;
   height: 20px;
-  padding-right: 10px;
   position: relative;
   top: 5px;
 }
