@@ -10,6 +10,7 @@ RewriteRule ^signup/?$    ./signup.php    [NC,L]
 RewriteRule ^retrieve/?$    ./retrieve.php    [NC,L]
 RewriteRule ^authentication/?$    ./verification.php    [NC,L]
 RewriteRule ^logout/?$    ./logout.php    [NC,L]
+RewriteRule ^dashboard/?$    ./index.php    [NC,L]
 
 RewriteRule ^resetpassword/(.*)$ ./resetpassword.php?code=$1 [NC,L]
 RewriteRule ^activateaccount/(.*)$ ./activate.php?code=$1 [NC,L]
