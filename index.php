@@ -23,7 +23,7 @@
           <img src="images/account.png" />
           <?php if ($mobile_device == false) { echo "<span>".strtoupper($_SESSION['USER_FULLNAME'])."</span>"; } ?>
         </a>
-        DASHBOARD
+        <span>DASHBOARD</span>
       </header>
     </body>
 </html>
