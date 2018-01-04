@@ -16,7 +16,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/auth.css" type="text/css" rel="stylesheet" />
         <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-        <link rel="stylesheet" href="https://hosted-sip.civic.com/css/civic-modal.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/login.js" type="text/javascript"></script>
     </head>

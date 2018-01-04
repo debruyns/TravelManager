@@ -1,0 +1,23 @@
+
+// Stylesheet for TravelManager pages
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    outline: none;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background: #FEFEFE;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #363C48;
+}
