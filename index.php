@@ -19,7 +19,7 @@
     <body>
       <header>
         <img src="images/logo.png" class="logo" />
-        <a class="user-control" href="/account"><?php echo strtoupper($_SESSION['USER_FULLNAME']); ?></a>
+        <a class="user-control" href="/account"><img src="images/account.png" /><?php echo strtoupper($_SESSION['USER_FULLNAME']); ?></a>
       </header>
     </body>
 </html>

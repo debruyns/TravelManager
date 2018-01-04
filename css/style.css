@@ -48,3 +48,9 @@ header > a.user-control:hover {
   background: #272B33;
   cursor: pointer;
 }
+
+header > a.user-control > img {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
