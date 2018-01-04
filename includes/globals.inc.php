@@ -11,7 +11,7 @@ require_once($path . '/includes/scripts/mailing.php');
 
 // Check if device is mobile
 require_once($path . '/includes/scripts/mobiledetect.class.php');
-$mobile_detect = new Mobile_Detect();
+$mobile_detect = new Mobile_Detect;
 $mobile_device = $mobile_detect->isMobile();
 
 // Include the required classes
