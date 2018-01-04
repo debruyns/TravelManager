@@ -29,7 +29,7 @@ header {
 header > img.logo {
   position: absolute;
   top: 20px;
-  left: 10px;
+  left: 20px;
   width: auto;
   height: 20px;
 }
@@ -44,8 +44,8 @@ header > a.user-control:link, header > a.user-control:visited {
   line-height: 60px;
   color: #FEFEFE;
   font-size: 12pt;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
 }
 
