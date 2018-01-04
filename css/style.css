@@ -29,7 +29,7 @@ header > img.logo {
   height: 30px;
 }
 
-header > div.user_control {
+header > div.user-control {
   position: absolute;
   top: 0;
   right: 20px;
@@ -37,5 +37,5 @@ header > div.user_control {
   height: 60px;
   line-height: 60px;
   color: #FEFEFE;
-  font-size: 12pt;
+  font-size: 13pt;
 }
