@@ -72,6 +72,7 @@ header > span {
   z-index: 100;
   padding-left: 10px;
   padding-right: 10px;
+  position: relative;
 }
 
 header > span:hover {
@@ -79,7 +80,7 @@ header > span:hover {
   background: #272B33;
 }
 
-header > div#menu-arrow {
+header > span > div#menu-arrow {
   position: absolute;
   left: 50%;
   bottom: 10px;
