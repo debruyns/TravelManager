@@ -29,13 +29,22 @@ header > img.logo {
   height: 30px;
 }
 
-header > div.user-control {
+header > a.user-control:link, header > a.user-control:visited {
+  display: block;
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 0;
   width: auto;
   height: 60px;
   line-height: 60px;
   color: #FEFEFE;
-  font-size: 13pt;
+  font-size: 12pt;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+header > a.user-control:hover {
+  background: #272B33;
+  cursor: pointer;
 }
