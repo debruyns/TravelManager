@@ -19,7 +19,6 @@ header {
   height: 60px;
   background: #363C48;
   position: relative;
-  line-height: 60px;
   text-align: center;
   font-size: 11pt;
   color: #FEFEFE;
@@ -65,6 +64,21 @@ header > a.user-control > img {
   top: 5px;
 }
 
+header > span {
+  display: inline-block;
+  width: auto;
+  height: 60px;
+  line-height: 60px;
+  z-index: 100;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header > span:hover {
+  cursor: pointer;
+  background: #272B33;
+}
+
 header > div#menu-arrow {
   position: absolute;
   left: 50%;
@@ -77,4 +91,5 @@ header > div#menu-arrow {
   border-right: 3px solid #FEFEFE;
   border-top: 3px solid #FEFEFE;
   transform: rotate(135deg);
+  z-index: 99;
 }
