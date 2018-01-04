@@ -9,6 +9,11 @@ $path = $_SERVER['DOCUMENT_ROOT'];
 // Include the required functions
 require_once($path . '/includes/scripts/mailing.php');
 
+// Check if device is mobile
+require_once($path . '/includes/scripts/mobiledetect.class.php');
+$mobile_detect = new Mobile_Detect();
+$mobile_device = $mobile_detect->isMobile();
+
 // Include the required classes
 require_once($path . '/includes/classes/connect.class.php');
 require_once($path . '/includes/classes/authenticator.class.php');
