@@ -67,6 +67,7 @@ header > a.user-control > img {
 
 header > span::after {
   position: relative;
+  bottom: 0.2em;
   content: "";
   display: inline-block;
   width: 0.4em;
@@ -74,5 +75,5 @@ header > span::after {
   border-right: 0.2em solid #FEFEFE;
   border-top: 0.2em solid #FEFEFE;
   transform: rotate(135deg);
-  margin-left: 5px;
+  margin-left: 10px;
 }
