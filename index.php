@@ -18,7 +18,7 @@
     </head>
     <body>
       <header>
-        
+        <img src="images/logo.png" class="logo" />
       </header>
     </body>
 </html>
