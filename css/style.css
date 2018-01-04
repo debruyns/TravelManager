@@ -65,15 +65,16 @@ header > a.user-control > img {
   top: 5px;
 }
 
-header > span::after {
-  position: relative;
-  bottom: 0.2em;
+header > div#menu-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  margin-left: -3px;
   content: "";
   display: inline-block;
-  width: 0.4em;
-  height: 0.4em;
-  border-right: 0.2em solid #FEFEFE;
-  border-top: 0.2em solid #FEFEFE;
+  width: 6px;
+  height: 6px;
+  border-right: 3px solid #FEFEFE;
+  border-top: 3px solid #FEFEFE;
   transform: rotate(135deg);
-  margin-left: 10px;
 }

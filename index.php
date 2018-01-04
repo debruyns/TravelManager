@@ -24,6 +24,7 @@
           <?php if ($mobile_device == false) { echo "<span>".strtoupper($_SESSION['USER_FULLNAME'])."</span>"; } ?>
         </a>
         <span>DASHBOARD</span>
+        <div id="menu-arrow"></div>
       </header>
     </body>
 </html>
