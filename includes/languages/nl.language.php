@@ -6,7 +6,7 @@ $i18n = array(
 
     // Login Page
 
-    "LOGIN_TITLE"               => "Travel Manager - Inloggen",
+    "LOGIN_TITLE"               => "TravelManager - Inloggen",
     "SIGN_IN_MESSAGE"           => "Inloggen op de CityTakeOff Travel Manager",
     "LABEL_EMAIL"               => "EMAIL",
     "PLACEHOLDER_EMAIL"         => "Vul uw e-mailadres in",
@@ -27,7 +27,7 @@ $i18n = array(
 
     // Sign Up Page
 
-    "SIGNUP_TITLE"              => "Travel Manager - Registreren",
+    "SIGNUP_TITLE"              => "TravelManager - Registreren",
     "SIGN_UP_MESSAGE"           => "Account aanmaken",
     "LABEL_FIRSTNAME"           => "VOORNAAM",
     "PLACEHOLDER_FIRSTNAME"     => "Vul uw voornaam in",
@@ -49,7 +49,7 @@ $i18n = array(
 
     // Retrieve Page
 
-    "RETRIEVE_TITLE"            => "Travel Manager - Wachtwoord Opvragen",
+    "RETRIEVE_TITLE"            => "TravelManager - Wachtwoord Opvragen",
     "RETRIEVE_MESSAGE"          => "Wachtwoord opvragen",
     "BUTTON_RETRIEVE"           => "Opvragen",
     "LINKTEXT_BACK_LOGIN"       => "Terug naar inloggen",
@@ -64,7 +64,7 @@ $i18n = array(
 
     // Reset Password Page
 
-    "RESET_TITLE"                       => "Travel Manager - Reset Wachtwoord",
+    "RESET_TITLE"                       => "TravelManager - Reset Wachtwoord",
     "RESET_MESSAGE"                     => "Kies een nieuw wachtwoord",
     "PLACEHOLDER_RESET_PASSWORD"        => "Kies een nieuw wachtwoord",
     "PLACEHOLDER_RESET_CONFIRM"         => "Bevestig het nieuwe wachtwoord",
