@@ -28,7 +28,7 @@
           <div id="menu-arrow"></div>
         </spa>
       </header>
-      <nav>
+      <nav <?php if ($mobile_device == true) { echo "class='mobile-menu'"; } ?>>
         <a href="/dashboard">Dashboard</a>
         <a href="/trips">My Trips</a>
         <a href="/account">My Account</a>

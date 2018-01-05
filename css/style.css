@@ -66,7 +66,7 @@ header > a.user-control > img {
 
 header > span {
   display: inline-block;
-  width: auto;
+  width: 400px;
   height: 60px;
   line-height: 60px;
   z-index: 100;
@@ -106,6 +106,10 @@ nav {
   left: 50%;
   margin-left: -200px;
   text-align: center;
+}
+
+nav.mobile-menu {
+  width: 100% !important;
 }
 
 nav > a:link, nav > a:visited {
