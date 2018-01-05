@@ -7,7 +7,7 @@ $(document).ready(function(){
     if ($("#menu-list").is(":visible")){
       $("#menu-arrow").rotate(135);
       $("#menu-list").slideUp();
-    else {
+    } else {
       $("#menu-arrow").rotate(315);
       $("#menu-list").slideDown();
     }
