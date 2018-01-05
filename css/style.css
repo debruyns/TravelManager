@@ -106,6 +106,7 @@ nav {
 
 nav.mobile-menu {
   width: 100% !important;
+  left: 0 !important;
 }
 
 nav > a:link, nav > a:visited {
