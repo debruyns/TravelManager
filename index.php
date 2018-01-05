@@ -24,7 +24,7 @@
           <img src="images/account.png" />
           <?php if ($mobile_device == false) { echo "<span>".strtoupper($_SESSION['USER_FULLNAME'])."</span>"; } ?>
         </a>
-        <span id="menu-sel" <?php if ($mobile_device == true) { echo "class='mobile-menu-sel'"; } ?>>
+        <span id="menu-sel">
           DASHBOARD
           <div id="menu-arrow"></div>
         </span>

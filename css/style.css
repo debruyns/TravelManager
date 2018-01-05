@@ -66,21 +66,16 @@ header > a.user-control > img {
 
 header > span {
   display: inline-block;
-  width: 400px;
+  width: auto;
   height: 60px;
   line-height: 50px;
   position: relative;
-}
-
-header > span.mobile-menu-sel {
-  width: auto !important;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 header > span:hover {
   cursor: pointer;
-  background: #272B33;
 }
 
 header > span > div#menu-arrow {
