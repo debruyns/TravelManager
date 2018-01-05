@@ -155,7 +155,7 @@ h1.account-title {
   border-bottom: 1px #363C48 solid;
 }
 
-table.account-settings {
+div.all-settings {
   display: inline-block;
   width: 90%;
   max-width: 850px;
@@ -165,9 +165,30 @@ table.account-settings {
   text-align: center;
 }
 
-table.account-settings > tr > td {
+div.all-settings > div.account-setting {
+  width: 95%;
+  height: auto;
+  background: red;
+}
+
+div.all-settings > div.account-setting > div.setting-name {
+  display: inline-block;
   width: 50%;
-  min-width: 50%;
+  height: 60px;
+  line-height: 60px;
+  text-align: left;
+  color: #363C48;
+  font-size: 11pt;
+}
+
+div.all-settings > div.account-setting > div.setting-action {
+  display: inline-block;
+  width: 50%;
+  height: 60px;
+  line-height: 60px;
+  text-align: right;
+  color: #363C48;
+  font-size: 11pt;
 }
 
 /* END Account Page */
