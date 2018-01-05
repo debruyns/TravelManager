@@ -100,6 +100,10 @@ $i18n = array(
     "PAGE_TITLE_INDEX"                  => "Dashboard",
     "PAGE_TITLE_TRIPS"                  => "Trips",
     "PAGE_TITLE_ACCOUNT"                => "Account",
-    "PAGE_TITLE_LOGOUT"                 => "Logout"
+    "PAGE_TITLE_LOGOUT"                 => "Logout",
+
+    // Account
+
+    "ACCOUNT_TITLE"                     => "Manage your account"
 
 );

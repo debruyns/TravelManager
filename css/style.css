@@ -1,5 +1,7 @@
 
-// Stylesheet for TravelManager pages
+/** Stylesheet for TravelManager pages **/
+
+/* START General */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
@@ -13,6 +15,10 @@ body {
     font-family: 'Roboto', sans-serif;
     background: #FEFEFE;
 }
+
+/* END General */
+
+/* START Header */
 
 header {
   width: 100%;
@@ -92,7 +98,9 @@ header > span > div#menu-arrow {
   transform: rotate(135deg);
 }
 
-/* Navigation Menu */
+/* END Header */
+
+/* START Navigation Menu */
 
 nav {
   display: none;
@@ -126,3 +134,23 @@ nav > a:hover {
   background: #3C424F;
   cursor: pointer;
 }
+
+/* END Navigation Menu */
+
+/* START Account Page */
+
+h1 {
+  display: inline-block;
+  width: 90%;
+  max-width: 750px;
+  height: auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: #363C48;
+  font-size: 14pt;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px #363C48 solid;
+}
+
+/* END Account Page */
