@@ -172,11 +172,12 @@ div.all-settings > div.account-setting {
   background: red;
   margin: 0 auto;
   padding: 0px;
+  text-align: center;
 }
 
 div.all-settings > div.account-setting > div.setting-name {
   display: inline-block;
-  width: 50%;
+  width: 49%;
   height: 60px;
   line-height: 60px;
   text-align: left;
@@ -188,7 +189,7 @@ div.all-settings > div.account-setting > div.setting-name {
 
 div.all-settings > div.account-setting > div.setting-action {
   display: inline-block;
-  width: 50%;
+  width: 49%;
   height: 60px;
   line-height: 60px;
   text-align: right;
