@@ -104,6 +104,8 @@ $i18n = array(
 
     // Account
 
-    "ACCOUNT_TITLE"                     => "Manage your account"
+    "ACCOUNT_TITLE"                     => "Beheer uw account",
+    "ACCOUNT_PROFILE"                   => "Profiel",
+    "ACCOUNT_EDIT"                      => "Wijzig"
 
 );

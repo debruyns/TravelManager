@@ -140,7 +140,7 @@ nav > a:hover {
 
 /* START Account Page */
 
-h1 {
+h1.account-title {
   display: inline-block;
   width: 90%;
   max-width: 850px;
