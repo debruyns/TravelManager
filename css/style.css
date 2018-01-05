@@ -98,7 +98,7 @@ nav {
   display: none;
   width: 400px;
   height: auto;
-  background: #363C48;
+  background: #545E72;
   position: absolute;
   top: 60px;
   left: 50%;
@@ -123,6 +123,6 @@ nav > a:link, nav > a:visited {
 }
 
 nav > a:hover {
-  background: #272B33;
+  background: #3C424F;
   cursor: pointer;
 }
