@@ -93,6 +93,13 @@ $i18n = array(
     "ACTIVATE_CODE_INVALID"             => "De opgegeven activatie code is niet geldig",
     "ACTIVATE_TITLE"                    => "TravelManager - Activeer Account",
     "ACTIVATE_MESSAGE"                  => "Activeer uw CityTakeOff TravelManager account",
-    "ACTIVATE_SUCCESS"                  => "Uw account is succesvol geactiveerd.<br />Klik <a href='/login'>hier</a> om aan te melden."
+    "ACTIVATE_SUCCESS"                  => "Uw account is succesvol geactiveerd.<br />Klik <a href='/login'>hier</a> om aan te melden.",
+
+    // Pages
+
+    "PAGE_TITLE_INDEX"                  => "Dashboard",
+    "PAGE_TITLE_TRIPS"                  => "Trips",
+    "PAGE_TITLE_ACCOUNT"                => "Account",
+    "PAGE_TITLE_LOGOUT"                 => "Uitloggen"
 
 );

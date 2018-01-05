@@ -34,15 +34,15 @@
           <?php if ($mobile_device == false) { echo "<span>".strtoupper($_SESSION['USER_FULLNAME'])."</span>"; } ?>
         </a>
         <span id="menu-sel">
-          DASHBOARD
+          <?= $page_title ?>
           <div id="menu-arrow"></div>
         </span>
       </header>
       <nav id="menu-list" <?php if ($mobile_device == true) { echo "class='mobile-menu'"; } ?>>
-        <a href="/dashboard">Dashboard</a>
-        <a href="/trips">My Trips</a>
-        <a href="/account">My Account</a>
-        <a href="/logout">Logout</a>
+        <a href="/dashboard"><?= $i18n['PAGE_TITLE_INDEX']; ?></a>
+        <a href="/trips"><?= $i18n['PAGE_TITLE_TRIPS']; ?></a>
+        <a href="/account"><?= $i18n['PAGE_TITLE_ACCOUNT']; ?></a>
+        <a href="/logout"><?= $i18n['PAGE_TITLE_LOGOUT']; ?></a>
       </nav>
     </body>
 </html>
