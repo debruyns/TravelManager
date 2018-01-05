@@ -27,7 +27,7 @@
 
   <div class="account-setting">
     <div class="setting-name"><?= $i18n['ACCOUNT_DUALSTEP']; ?></div>
-    <div class="setting-action"><button class="green"><?= $i18n['ACCOUNT_ENABLE']; ?></button></div>
+    <div class="setting-action"><button class="red"><?= $i18n['ACCOUNT_DISABLE']; ?></button></div>
   </div>
 
 </div>
