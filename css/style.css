@@ -100,6 +100,7 @@ header > span > div#menu-arrow {
 /* Navigation Menu */
 
 nav {
+  display: none;
   width: 400px;
   height: auto;
   background: #363C48;
@@ -122,8 +123,8 @@ nav > a:link, nav > a:visited {
   color: #FEFEFE;
   font-size: 11pt;
   text-transform: uppercase;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 nav > a:hover {

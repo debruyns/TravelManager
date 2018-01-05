@@ -23,12 +23,12 @@
           <img src="images/account.png" />
           <?php if ($mobile_device == false) { echo "<span>".strtoupper($_SESSION['USER_FULLNAME'])."</span>"; } ?>
         </a>
-        <span <?php if ($mobile_device == true) { echo "class='mobile-menu-sel'"; } ?>>
+        <span id="menu-sel" <?php if ($mobile_device == true) { echo "class='mobile-menu-sel'"; } ?>>
           DASHBOARD
           <div id="menu-arrow"></div>
-        </spa>
+        </span>
       </header>
-      <nav <?php if ($mobile_device == true) { echo "class='mobile-menu'"; } ?>>
+      <nav id="menu-list" <?php if ($mobile_device == true) { echo "class='mobile-menu'"; } ?>>
         <a href="/dashboard">Dashboard</a>
         <a href="/trips">My Trips</a>
         <a href="/account">My Account</a>
