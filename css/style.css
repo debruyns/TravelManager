@@ -161,16 +161,13 @@ table.account-settings {
   max-width: 850px;
   height: auto;
   border: 1px #363C48 solid;
-  border-radius: 5px;
+  border-radius: 3px;
   text-align: center;
-}
-
-table.account-settings > tr {
-  width: 95%;
 }
 
 table.account-settings > tr > td {
   width: 50%;
+  min-width: 50%;
 }
 
 /* END Account Page */
