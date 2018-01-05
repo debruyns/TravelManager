@@ -166,13 +166,10 @@ table.account-settings {
 }
 
 table.account-settings > tr {
-  display: block;
   width: 95%;
-  height: auto;
 }
 
 table.account-settings > tr > td {
-  display: inline-block;
   width: 50%;
   height: 60px;
   line-height: 60px;
