@@ -6,7 +6,7 @@
 <div class="all-settings">
   <div class="account-setting">
     <div class="setting-name"><?= $i18n['ACCOUNT_PROFILE']; ?></div>
-    <div class="setting-action"><button><?= $i18n['ACCOUNT_EDIT']; ?></button></div>
+    <div class="setting-action"><button class="green"><?= $i18n['ACCOUNT_EDIT']; ?></button></div>
   </div>
 </div>
 

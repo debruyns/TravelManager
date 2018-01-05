@@ -169,7 +169,6 @@ div.all-settings > div.account-setting {
   display: inline-block;
   width: 95%;
   height: auto;
-  background: red;
   margin: 0 auto;
   padding: 0px;
   text-align: center;
@@ -185,18 +184,58 @@ div.all-settings > div.account-setting > div.setting-name {
   font-size: 11pt;
   margin: 0 auto;
   padding: 0px;
+  padding-left: 20px;
 }
 
 div.all-settings > div.account-setting > div.setting-action {
   display: inline-block;
   width: 49%;
-  height: 60px;
-  line-height: 60px;
+  height: 80px;
+  line-height: 80px;
   text-align: right;
   color: #363C48;
   font-size: 11pt;
   margin: 0 auto;
   padding: 0px;
+  padding-right: 20px;
+}
+
+div.all-settings > div.account-setting > div.setting-action > button.green {
+    display: inline;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 0px;
+    background: #6DC234;
+    color: #FFFFFF;
+    font-size: 11pt;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+div.all-settings > div.account-setting > div.setting-action > button.green:hover {
+    background: #529128;
+    cursor: pointer;
+}
+
+div.all-settings > div.account-setting > div.setting-action > button.red {
+    display: inline;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 0px;
+    background: #F24141;
+    color: #FFFFFF;
+    font-size:11pt;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+div.all-settings > div.account-setting > div.setting-action > button.red:hover {
+    background: #D62F2F;
+    cursor: pointer;
 }
 
 /* END Account Page */
