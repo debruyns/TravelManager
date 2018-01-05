@@ -108,7 +108,6 @@ $i18n = array(
     "ACCOUNT_PROFILE"                   => "Profiel",
     "ACCOUNT_EDIT"                      => "Wijzig",
     "ACCOUNT_PASSWORD"                  => "Wachtwoord",
-    "ACCOUNT_CHANGE"                    => "Aanpassen",
     "ACCOUNT_LANGUAGE"                  => "Taal",
     "ACCOUNT_PREMIUM"                   => "Premium",
     "ACCOUNT_DUALSTEP"                  => "2-Staps Verificatie",
