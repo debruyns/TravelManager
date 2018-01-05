@@ -176,7 +176,7 @@ div.all-settings > div.account-setting {
 
 div.all-settings > div.account-setting > div.setting-name {
   display: inline-block;
-  width: 49%;
+  width: 45%;
   height: 60px;
   line-height: 60px;
   text-align: left;
@@ -184,12 +184,11 @@ div.all-settings > div.account-setting > div.setting-name {
   font-size: 11pt;
   margin: 0 auto;
   padding: 0px;
-  padding-left: 20px;
 }
 
 div.all-settings > div.account-setting > div.setting-action {
   display: inline-block;
-  width: 49%;
+  width: 45%;
   height: 80px;
   line-height: 80px;
   text-align: right;
@@ -197,7 +196,6 @@ div.all-settings > div.account-setting > div.setting-action {
   font-size: 11pt;
   margin: 0 auto;
   padding: 0px;
-  padding-right: 20px;
 }
 
 div.all-settings > div.account-setting > div.setting-action > button.green {
