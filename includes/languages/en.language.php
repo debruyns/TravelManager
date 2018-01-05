@@ -106,6 +106,13 @@ $i18n = array(
 
     "ACCOUNT_TITLE"                     => "Manage your account",
     "ACCOUNT_PROFILE"                   => "Profile",
-    "ACCOUNT_EDIT"                      => "Edit"
+    "ACCOUNT_EDIT"                      => "Edit",
+    "ACCOUNT_PASSWORD"                  => "Password",
+    "ACCOUNT_CHANGE"                    => "Change",
+    "ACCOUNT_LANGUAGE"                  => "Language",
+    "ACCOUNT_PREMIUM"                   => "Premium",
+    "ACCOUNT_DUALSTEP"                  => "2-Step Verification",
+    "ACCOUNT_ENABLE"                    => "Enable",
+    "ACCOUNT_DISABLE"                   => "Disable"
 
 );
