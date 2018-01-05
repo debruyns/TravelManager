@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   $("#menu-sel").click(function(){
 
-    alert("Test");
+    $("#menu-arrow").rotate(180);
 
   });
 
