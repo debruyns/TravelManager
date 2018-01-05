@@ -94,3 +94,25 @@ header > span > div#menu-arrow {
   transform: rotate(135deg);
   z-index: 99;
 }
+
+/* Navigation Menu */
+
+nav {
+  width: 400px;
+  height: auto;
+  background: #363C48;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -200px;
+}
+
+nav > a:link, nav > a:visited {
+  display: block;
+  text-decoration: none;
+  color: #FEFEFE;
+  font-size: 11pt;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

@@ -28,5 +28,11 @@
           <div id="menu-arrow"></div>
         </spa>
       </header>
+      <nav>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/trips">My Trips</a>
+        <a href="/account">My Account</a>
+        <a href="/logout">Logout</a>
+      </nav>
     </body>
 </html>
