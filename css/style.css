@@ -69,9 +69,6 @@ header > span {
   width: 400px;
   height: 60px;
   line-height: 60px;
-  z-index: 100;
-  padding-left: 10px;
-  padding-right: 10px;
   position: relative;
 }
 
@@ -92,7 +89,6 @@ header > span > div#menu-arrow {
   border-right: 3px solid #FEFEFE;
   border-top: 3px solid #FEFEFE;
   transform: rotate(135deg);
-  z-index: 99;
 }
 
 /* Navigation Menu */
