@@ -21,6 +21,7 @@ $(document).ready(function(){
     if ($("#menu-list").is(":visible")){
 
       if (!container.is(e.target) && container.has(e.target).length === 0){
+        $("#menu-arrow").rotate(135);
         container.slideUp();
       }
     }
