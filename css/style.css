@@ -154,4 +154,12 @@ h1.account-title {
   border-bottom: 1px #363C48 solid;
 }
 
+table.account-settings {
+  display: inline-block;
+  width: 90%;
+  max-width: 850px;
+  height: auto;
+  border: 1px #363C48 solid;
+}
+
 /* END Account Page */
