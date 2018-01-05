@@ -172,6 +172,11 @@ div.all-settings > div.account-setting {
   margin: 0 auto;
   padding: 0px;
   text-align: center;
+  border-bottom: 1px #CECECE solid;
+}
+
+div.all-settings > div.account-setting:last-of-type {
+  border: 0px;
 }
 
 div.all-settings > div.account-setting > div.setting-name {
