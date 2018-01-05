@@ -167,8 +167,8 @@ table.account-settings {
 table.account-settings > tr > td {
   display: inline-block;
   width: 50%;
-  height: 30px;
-  line-height: 30px;
+  height: 60px;
+  line-height: 60px;
 }
 
 /* END Account Page */
