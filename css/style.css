@@ -72,6 +72,12 @@ header > span {
   position: relative;
 }
 
+header > span.mobile-menu-sel {
+  width: auto !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
 header > span:hover {
   cursor: pointer;
   background: #272B33;
