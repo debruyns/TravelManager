@@ -31,7 +31,7 @@
         ?>
         <a class="user-control" href="/account">
           <img src="images/account.png" />
-          <?php if ($mobile_device == false) { echo "<span>".strtoupper($_SESSION['USER_FIRSTNAME'])."</span>"; } ?>
+          <?php if ($mobile_device == false) { echo "<span>".strtoupper($_SESSION['USER_FULLNAME'])."</span>"; } ?>
         </a>
         <span id="menu-sel">
           <?= $page_title ?>
