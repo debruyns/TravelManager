@@ -19,7 +19,13 @@
     </head>
     <body>
       <header>
-        <img src="images/logo.png" class="logo" />
+        <?php
+          if ($mobile_device == false) {
+            echo '<img src="images/logo.png" class="logo" />';
+          } else {
+            echo '<img src="images/logo-mobile.png" class="logo" />';
+          }
+        ?>
         <a class="user-control" href="/account">
           <img src="images/account.png" />
           <?php if ($mobile_device == false) { echo "<span>".strtoupper($_SESSION['USER_FULLNAME'])."</span>"; } ?>
