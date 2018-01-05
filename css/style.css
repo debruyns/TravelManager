@@ -170,6 +170,8 @@ div.all-settings > div.account-setting {
   width: 95%;
   height: auto;
   background: red;
+  margin: 0 auto;
+  padding: 0px;
 }
 
 div.all-settings > div.account-setting > div.setting-name {
