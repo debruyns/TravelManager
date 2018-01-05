@@ -42,6 +42,36 @@ class UserDAO {
         }
     }
 
+    // Get a user by website secret
+    public static function checkSecretValid($secret) {
+
+        $user_secret = substr($secret, 0, 10);
+        $user_id = substr($secret, 10);
+
+        $db = Connect::getConnection();
+
+        try {
+            $stmt = $db->prepare("SELECT * FROM USERS WHERE ID=:id AND SECRET=:secret");
+            $stmt->bindValue(':id', $user_id, PDO::PARAM_INT);
+            $stmt->bindValue(':secret', $user_secret, PDO::PARAM_STR);
+            $stmt->execute();
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            if (count($results) == 1) {
+                $result = $results[0];
+                $user = new User($result['ID'], $result['FIRSTNAME'], $result['LASTNAME'], $result['EMAIL'], $result['PASSWORD'], $result['SECRET'], $result['ACTIVE'], $result['STATUS'], $result['CREATIONDATE'], $result['LASTLOGIN'], $result['PREMIUM'], $result['PREMIUMEND'], $result['LANGUAGE'], $result['DUALSTEP'], $result['DUALSTEPCODE']);
+                if ($user->getStatus() == "1"){
+                  return true;
+                } else {
+                  return false;
+                }
+            }
+            return false;
+        } catch (PDOException $e) {
+            echo 'ERROR: ' . $e->getMessage();
+            return false;
+        }
+    }
+
     // Update user password
     public static function updatePassword($user, $hash) {
 

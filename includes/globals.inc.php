@@ -28,3 +28,6 @@ require_once($path . '/includes/DAO/passwordrecoveryDAO.php');
 
 // Include the language control script
 require_once($path . '/includes/languages/cookie.language.php');
+
+// Include the page control script
+require_once($path . '/includes/scripts/pageControl.php');
