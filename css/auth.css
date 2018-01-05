@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
-    background: url('../images/bg.png') repeat;
+    background: #FAFAFA;
 }
 
 header {
