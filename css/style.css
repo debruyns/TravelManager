@@ -166,6 +166,7 @@ div.all-settings {
 }
 
 div.all-settings > div.account-setting {
+  display: inline-block;
   width: 95%;
   height: auto;
   background: red;
@@ -179,6 +180,8 @@ div.all-settings > div.account-setting > div.setting-name {
   text-align: left;
   color: #363C48;
   font-size: 11pt;
+  margin: 0 auto;
+  padding: 0px;
 }
 
 div.all-settings > div.account-setting > div.setting-action {
@@ -189,6 +192,8 @@ div.all-settings > div.account-setting > div.setting-action {
   text-align: right;
   color: #363C48;
   font-size: 11pt;
+  margin: 0 auto;
+  padding: 0px;
 }
 
 /* END Account Page */
