@@ -117,6 +117,11 @@ $i18n = array(
 
     // Profile
 
-    "PROFILE_TITLE"                     => "Profiel Wijzigen"
+    "PROFILE_TITLE"                     => "Profiel Wijzigen",
+
+    // Forms
+
+    "FORM_SAVE_CHANGES"                 => "Opslaan",
+    "FORM_CANCEL"                       => "Annuleer"
 
 );

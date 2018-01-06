@@ -16,6 +16,8 @@
       <label><?= $i18n['LABEL_EMAIL']; ?></label>
       <input type="email" id="profile_email" placeholder="<?= $i18n['PLACEHOLDER_EMAIL']; ?>" value="<?= $auth_user->getEmail(); ?>" />
   </div>
+  <button class="save"><?= $i18n['FORM_SAVE_CHANGES']; ?></button>
+  <a href="/account" class="cancel"><?= $i18n['FORM_CANCEL']; ?></a>
 </div>
 
 <!-- Include template footer -->

@@ -310,4 +310,46 @@ div.form-container > .form-element:focus-within {
     background: #D0D0D0;
 }
 
+div.form-container > button.save {
+    display: inline;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 0px;
+    background: #6DC234;
+    color: #FFFFFF;
+    font-size: 11pt;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+}
+
+div.form-container > button.save:hover {
+    background: #529128;
+    cursor: pointer;
+}
+
+div.form-container > a.cancel:link,
+div.form-container > a.cancel:visited {
+    display: inline;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 0px;
+    background: #F24141;
+    color: #FFFFFF;
+    font-size:11pt;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+div.form-container > a.cancel:hover {
+    background: #D62F2F;
+    cursor: pointer;
+}
+
 /* END Form Design */

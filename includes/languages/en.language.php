@@ -117,6 +117,11 @@ $i18n = array(
 
     // Profile
 
-    "PROFILE_TITLE"                     => "Edit Profile"
+    "PROFILE_TITLE"                     => "Edit Profile",
+
+    // Forms
+
+    "FORM_SAVE_CHANGES"                 => "Save Changes",
+    "FORM_CANCEL"                       => "Cancel"
 
 );
