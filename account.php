@@ -22,12 +22,20 @@
 
   <div class="account-setting">
     <div class="setting-name"><?= $i18n['ACCOUNT_PREMIUM']; ?></div>
-    <div class="setting-action"><button class="green"><?= $i18n['ACCOUNT_EDIT']; ?></button></div>
+    <div class="setting-action">
+      <button class="green"><?= $i18n['ACCOUNT_EDIT']; ?></button>
+    </div>
   </div>
 
   <div class="account-setting">
     <div class="setting-name"><?= $i18n['ACCOUNT_DUALSTEP']; ?></div>
-    <div class="setting-action"><button class="red"><?= $i18n['ACCOUNT_DISABLE']; ?></button></div>
+    <div class="setting-action">
+      <?php if ($auth_user->getDualStep() == "1") { ?>
+        <button class="red"><?= $i18n['ACCOUNT_DISABLE']; ?></button>
+      <?php } else { ?>
+        <button class="green"><?= $i18n['ACCOUNT_ENABLE']; ?></button>
+      <?php } ?>
+    </div>
   </div>
 
 </div>
