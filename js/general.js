@@ -28,6 +28,13 @@ $(document).ready(function(){
 
   });
 
+  // Focus on input when clicking of a login element
+  $(".form-element").click(function(){
+
+      $(this).find("input").focus();
+
+  });
+
   // Function to rotate
   jQuery.fn.rotate = function(degrees) {
     $(this).css({'transform' : 'rotate('+ degrees +'deg)'});

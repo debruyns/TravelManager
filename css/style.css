@@ -261,3 +261,48 @@ div.all-settings > div.account-setting > div.setting-action > a.red-button:hover
 }
 
 /* END Settings Design */
+
+/* START Form Design */
+
+div.form-container {
+  display: inline-block;
+  width: 90%;
+  max-width: 850px;
+  height: auto;
+  border: 1px #363C48 solid;
+  border-radius: 3px;
+  text-align: center;
+}
+
+div.form-container > .form-element {
+  display: block;
+  width: 70%;
+  max-width: 400px;
+  height: auto;
+  border: 2px #EDEDED solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 10px;
+}
+
+div.form-container > .form-element > label {
+    display: block;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #333;
+}
+
+div.form-container > .form-element > input {
+    display: block;
+    border: 0px;
+    background: transparent;
+    outline: none;
+    color: #333;
+    font-size: 8pt;
+    margin-top: 5px;
+    width: 100%;
+}
+
+/* END Form Design */
