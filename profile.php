@@ -6,15 +6,15 @@
 <div class="form-container">
   <div class="form-element">
       <label><?= $i18n['LABEL_FIRSTNAME']; ?></label>
-      <input type="email" id="profile_firstname" placeholder="<?= $i18n['PLACEHOLDER_FIRSTNAME']; ?>" />
+      <input type="text" id="profile_firstname" placeholder="<?= $i18n['PLACEHOLDER_FIRSTNAME']; ?>" value="<?= $auth_user->getFirstname(); ?>" />
   </div>
   <div class="form-element">
       <label><?= $i18n['LABEL_LASTNAME']; ?></label>
-      <input type="email" id="profile_lastname" placeholder="<?= $i18n['PLACEHOLDER_LASTNAME']; ?>" />
+      <input type="text" id="profile_lastname" placeholder="<?= $i18n['PLACEHOLDER_LASTNAME']; ?>" value="<?= $auth_user->getLastname(); ?>" />
   </div>
   <div class="form-element">
       <label><?= $i18n['LABEL_EMAIL']; ?></label>
-      <input type="email" id="profile_email" placeholder="<?= $i18n['PLACEHOLDER_EMAIL']; ?>" />
+      <input type="email" id="profile_email" placeholder="<?= $i18n['PLACEHOLDER_EMAIL']; ?>" value="<?= $auth_user->getEmail(); ?>" />
   </div>
 </div>
 

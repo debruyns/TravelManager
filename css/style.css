@@ -276,8 +276,8 @@ div.form-container {
 
 div.form-container > .form-element {
   display: block;
-  width: 70%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 700px;
   height: auto;
   border: 2px #D0D0D0 solid;
   border-radius: 5px;
