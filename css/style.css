@@ -149,9 +149,9 @@ nav > a:hover {
 
 /* END Navigation Menu */
 
-/* START Account Page */
+/* START Generic Design */
 
-h1.account-title {
+h1.page-title {
   display: inline-block;
   width: 90%;
   max-width: 850px;
@@ -165,6 +165,10 @@ h1.account-title {
   padding-bottom: 20px;
   border-bottom: 1px #363C48 solid;
 }
+
+/* END Generic Design */
+
+/* START Settings Design */
 
 div.all-settings {
   display: inline-block;
@@ -214,7 +218,8 @@ div.all-settings > div.account-setting > div.setting-action {
   padding: 0px;
 }
 
-div.all-settings > div.account-setting > div.setting-action > button.green {
+div.all-settings > div.account-setting > div.setting-action > a.green-button:link,
+div.all-settings > div.account-setting > div.setting-action > a.green-button:visited {
     display: inline;
     margin: 0 auto;
     margin-top: 20px;
@@ -226,14 +231,16 @@ div.all-settings > div.account-setting > div.setting-action > button.green {
     padding: 10px 20px;
     border-radius: 5px;
     outline: none;
+    text-decoration: none;
 }
 
-div.all-settings > div.account-setting > div.setting-action > button.green:hover {
+div.all-settings > div.account-setting > div.setting-action > a.green-button:hover {
     background: #529128;
     cursor: pointer;
 }
 
-div.all-settings > div.account-setting > div.setting-action > button.red {
+div.all-settings > div.account-setting > div.setting-action > a.red-button:link,
+div.all-settings > div.account-setting > div.setting-action > a.red-button:visited {
     display: inline;
     margin: 0 auto;
     margin-top: 20px;
@@ -245,11 +252,12 @@ div.all-settings > div.account-setting > div.setting-action > button.red {
     padding: 10px 20px;
     border-radius: 5px;
     outline: none;
+    text-decoration: none;
 }
 
-div.all-settings > div.account-setting > div.setting-action > button.red:hover {
+div.all-settings > div.account-setting > div.setting-action > a.red-button:hover {
     background: #D62F2F;
     cursor: pointer;
 }
 
-/* END Account Page */
+/* END Settings Design */

@@ -101,6 +101,7 @@ $i18n = array(
     "PAGE_TITLE_TRIPS"                  => "Trips",
     "PAGE_TITLE_ACCOUNT"                => "Account",
     "PAGE_TITLE_LOGOUT"                 => "Uitloggen",
+    "PAGE_TITLE_PROFILE"                => "Profiel Wijzigen",
 
     // Account
 
@@ -112,6 +113,10 @@ $i18n = array(
     "ACCOUNT_PREMIUM"                   => "Premium",
     "ACCOUNT_DUALSTEP"                  => "2-Staps Verificatie",
     "ACCOUNT_ENABLE"                    => "Inschakelen",
-    "ACCOUNT_DISABLE"                   => "Uitschakelen"
+    "ACCOUNT_DISABLE"                   => "Uitschakelen",
+
+    // Profile
+
+    "PROFILE_TITLE"                     => "Profiel Wijzigen"
 
 );
