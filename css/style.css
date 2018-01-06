@@ -279,7 +279,7 @@ div.form-container > .form-element {
   width: 70%;
   max-width: 400px;
   height: auto;
-  border: 2px #EDEDED solid;
+  border: 2px #D0D0D0 solid;
   border-radius: 5px;
   padding: 10px;
   margin: 0 auto;
@@ -306,7 +306,7 @@ div.form-container > .form-element > input {
 }
 
 div.form-container > .form-element:focus-within {
-    background: #EDEDED;
+    background: #D0D0D0;
 }
 
 /* END Form Design */
