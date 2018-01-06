@@ -6,7 +6,7 @@
     if (!UserDAO::checkSecretValid($_SESSION['USER_SECRET'])){
       header("Location: /logout");
     } else {
-      $auth_user = UserDAO::getByWebsiteSecret($_SESSION['USER_SECRET']):
+      $auth_user = UserDAO::getByWebsiteSecret($_SESSION['USER_SECRET']);
     }
 
 ?>
