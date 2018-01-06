@@ -19,6 +19,8 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background: #ffffff; /* Old browsers */
     background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
