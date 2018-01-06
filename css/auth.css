@@ -197,7 +197,7 @@ div#login-form > button.red:hover {
     width: 70%;
     max-width: 400px;
     height: auto;
-    border: 2px #EDEDED solid;
+    border: 2px #D0D0D0 solid;
     border-radius: 5px;
     padding: 10px;
     margin: 0 auto;
@@ -224,7 +224,7 @@ div#login-form > button.red:hover {
 }
 
 .form-element:focus-within {
-    background: #EDEDED;
+    background: #D0D0D0;
 }
 
 div#login-form > div.login-link {
@@ -267,20 +267,20 @@ div#login-form > div.login-link > ul > li {
     margin: 0 auto;
     padding: 3px 5px;
     padding-top: 4px;
-    border: 2px #EDEDED solid;
+    border: 2px #D0D0D0 solid;
     border-right-width: 1px;
     border-left-width: 1px;
 }
 
 div#login-form > div.login-link > ul > li:first-of-type {
-    border: 2px #EDEDED solid;
+    border: 2px #D0D0D0 solid;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right-width: 1px;
 }
 
 div#login-form > div.login-link > ul > li:last-of-type {
-    border: 2px #EDEDED solid;
+    border: 2px #D0D0D0 solid;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border-left-width: 1px;
@@ -292,12 +292,12 @@ div#login-form > div.login-link > ul > li > img {
 }
 
 div#login-form > div.login-link > ul > li:hover {
-    background: #EDEDED;
+    background: #D0D0D0;
     cursor: pointer;
 }
 
 div#login-form > div.login-link > ul > li.active {
-    background: #EDEDED;
+    background: #D0D0D0;
     cursor: initial;
 }
 
@@ -305,7 +305,7 @@ div#login-form > div.login-link > ul > li.active {
     display: none;
     width: 150px;
     height: auto;
-    background-color: #EDEDED;
+    background-color: #D0D0D0;
     color: #333333;
     text-align: center;
     border-radius: 6px;
@@ -326,7 +326,7 @@ div#login-form > div.login-link > ul > li.active {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent #EDEDED transparent;
+    border-color: transparent transparent #D0D0D0 transparent;
 }
 
 div#copyright {

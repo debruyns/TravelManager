@@ -305,4 +305,8 @@ div.form-container > .form-element > input {
     width: 100%;
 }
 
+div.form-container > .form-element:focus-within {
+    background: #EDEDED;
+}
+
 /* END Form Design */
