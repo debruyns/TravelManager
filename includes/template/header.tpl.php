@@ -26,9 +26,9 @@
       <header>
         <?php
           if ($mobile_device == false) {
-            echo '<img src="images/logo.png" class="logo" />';
+            echo '<a class="logo" href="/dashboard"><img src="images/logo.png" /></a>';
           } else {
-            echo '<img src="images/logo-mobile.png" class="logo" />';
+            echo '<a class="logo" href="/dashboard"><img src="images/logo-mobile.png" /></a>';
           }
         ?>
         <a class="user-control" href="/account">

@@ -43,10 +43,20 @@ header {
   text-transform: uppercase;
 }
 
-header > img.logo {
+header > a.logo {
+  display: block;
   position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header > a.logo > img {
+  position: relative;
   top: 20px;
-  left: 20px;
   width: auto;
   height: 20px;
 }
