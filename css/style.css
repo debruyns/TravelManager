@@ -54,6 +54,11 @@ header > a.logo {
   padding-right: 20px;
 }
 
+header > a.logo:hover {
+  background: #272B33;
+  cursor: pointer;
+}
+
 header > a.logo > img {
   position: relative;
   top: 20px;
