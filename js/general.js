@@ -6,7 +6,21 @@ $(document).ready(function(){
     var email = $("#profile_email").val();
     var firstname = $("#profile_firstname").val();
     var lastname = $("#profile_lastname").val();
-    alert("Test");
+
+    $("#success-message").hide();
+
+    $.post("includes/scripts/changeProfile.php", { email:email, firstname:firstname, lastname:lastname }, function(data){
+
+        if (data === "PROFILE_CHANGED"){
+            $("#error-message").hide();
+            $("#success-message").fadeIn("fast");
+        } else {
+            $("#error-message").html(data);
+            $("#error-message").fadeIn("fast");
+        }
+
+    });
+
   }
 
   $("#profile_button").click(function(){
