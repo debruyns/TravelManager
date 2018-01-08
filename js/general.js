@@ -1,5 +1,38 @@
 $(document).ready(function(){
 
+  /* START Profile Page */
+
+  function startProfileChange(){
+    var email = $("#profile_email").val();
+    var firstname = $("#profile_firstname").val();
+    var lastname = $("#profile_lastname").val();
+    alert("Test");
+  }
+
+  $("#profile_button").click(function(){
+      startProfileChange();
+  });
+
+  $("#profile_email").keyup(function(e){
+      if (e.which === 13){
+          startProfileChange();
+      }
+  });
+
+  $("#profile_firstname").keyup(function(e){
+      if (e.which === 13){
+          startProfileChange();
+      }
+  });
+
+  $("#profile_lastname").keyup(function(e){
+      if (e.which === 13){
+          startProfileChange();
+      }
+  });
+
+  /* END Profile Page */
+
   // Show menu when clicking on the menu selector
   $("#menu-sel").click(function(){
 
