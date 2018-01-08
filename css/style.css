@@ -289,6 +289,38 @@ div.form-container {
   text-align: center;
 }
 
+div.form-container > div.error-message {
+    display: none;
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+    border: 2px #BB583D solid;
+    color: #BB583D;
+    font-size: 7pt;
+    border-radius: 5px;
+    background: #FFEBE8;
+    padding: 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.form-container > div.success-message {
+    display: none;
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+    border: 2px #66A56C solid;
+    color: #66A56C;
+    font-size: 9pt;
+    border-radius: 5px;
+    background: #B5E2B9;
+    padding: 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
 div.form-container > .form-element {
   display: block;
   width: 90%;
