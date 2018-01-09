@@ -167,7 +167,7 @@ nav > a:hover {
 /* START Generic Design */
 
 h1.page-title {
-  display: inline-block;
+  display: block;
   width: 90%;
   max-width: 850px;
   height: auto;
