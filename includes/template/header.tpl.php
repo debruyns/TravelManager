@@ -35,7 +35,7 @@
         <a class="user-control" href="/account">
           <img src="images/account.png" />
           <?php if ($auth_user->getPremium() == "1") { echo "<img src='images/premium.png' />"; } ?>
-          <?php if ($mobile_device == false) { echo "<span>".strtoupper($_SESSION['USER_FULLNAME'])."</span>"; } ?>
+          <?php if ($mobile_device == false) { echo "<span>".strtoupper($auth_user->getFirstname()." ".$auth_user->getLastname())."</span>"; } ?>
         </a>
         <span id="menu-sel">
           <?= $page_title ?>

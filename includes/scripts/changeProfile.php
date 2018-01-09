@@ -8,7 +8,7 @@ require_once($path . "/includes/globals.inc.php");
 
 $profile = UserDAO::getByWebsiteSecret($_SESSION['USER_SECRET']);
 
-if (!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['email'])){
+if (!empty(trim($_POST['firstname']) && !empty(trim($_POST['lastname'])) && !empty(trim($_POST['email'])){
 
   if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
 
