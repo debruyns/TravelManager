@@ -114,6 +114,25 @@ class UserDAO {
         }
     }
 
+    // Update profile
+    public static function updateProfile($user, $firstname, $lastname, $email) {
+
+        $db = Connect::getConnection();
+
+        try {
+            $stmt = $db->prepare("UPDATE USERS SET FIRSTNAME=:firstname, LASTNAME=:lastname, EMAIL=:email WHERE ID=:user");
+            $stmt->bindParam(':firstname', $firstname, PDO::PARAM_STR);
+            $stmt->bindParam(':lastname', $lastname, PDO::PARAM_STR);
+            $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+            $stmt->bindParam(':user', $user, PDO::PARAM_INT);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            echo 'ERROR: ' . $e->getMessage();
+            return false;
+        }
+    }
+
     // Get a user by ID
     public static function getById($id) {
 

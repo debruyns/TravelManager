@@ -118,6 +118,10 @@ $i18n = array(
     // Profile
 
     "PROFILE_TITLE"                     => "Profiel Wijzigen",
+    "PROFILE_CHECK_FIELDS"              => "Gelieve alle velden in te vullen",
+    "PROFILE_EMAIL_VALID"               => "Het opgegeven e-mailadres is niet geldig",
+    "PROFILE_EMAIL_USED"                => "Het opgegeven e-mailadres wordt al gebruikt door een andere account",
+    "PROFILE_CHANGE_SUCCESS"            => "Uw profiel is succesvol gewijzigd",
 
     // Forms
 

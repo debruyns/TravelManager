@@ -118,6 +118,10 @@ $i18n = array(
     // Profile
 
     "PROFILE_TITLE"                     => "Edit Profile",
+    "PROFILE_CHECK_FIELDS"              => "Please fill in all fields",
+    "PROFILE_EMAIL_VALID"               => "The provided email address is not valid",
+    "PROFILE_EMAIL_USED"                => "The provided email address is already being used by another account",
+    "PROFILE_CHANGE_SUCCESS"            => "Your profile has been successfully updated",
 
     // Forms
 

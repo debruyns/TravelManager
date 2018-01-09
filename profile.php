@@ -5,7 +5,7 @@
 
 <div class="form-container">
   <div id="error-message" class="error-message"></div>
-  <div id="success-message" class="success-message"></div>
+  <div id="success-message" class="success-message"><?= $i18n['PROFILE_CHANGE_SUCCESS']; ?></div>
   <div class="form-element">
       <label><?= $i18n['LABEL_FIRSTNAME']; ?></label>
       <input type="text" id="profile_firstname" placeholder="<?= $i18n['PLACEHOLDER_FIRSTNAME']; ?>" value="<?= $auth_user->getFirstname(); ?>" />
