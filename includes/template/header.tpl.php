@@ -2,11 +2,12 @@
     require_once 'includes/globals.inc.php';
     if (!isset($_SESSION['USER_SECRET'])){
       header("Location: /login");
-    }
-    if (!UserDAO::checkSecretValid($_SESSION['USER_SECRET'])){
-      header("Location: /logout");
     } else {
-      $auth_user = UserDAO::getByWebsiteSecret($_SESSION['USER_SECRET']);
+      if (!UserDAO::checkSecretValid($_SESSION['USER_SECRET'])){
+        header("Location: /logout");
+      } else {
+        $auth_user = UserDAO::getByWebsiteSecret($_SESSION['USER_SECRET']);
+      }
     }
 
 ?>
