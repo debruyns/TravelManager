@@ -60,6 +60,11 @@ $(document).ready(function(){
 
   });
 
+  // Hide Top Success Message when clicking on it
+  $(".top-success-message").click(function(){
+    $(this).fadeOut("fast");
+  });
+
   // Hide menu when clicking outside of it
   $(document).mouseup(function(e){
 
