@@ -198,6 +198,8 @@ div.top-success-message {
     background: #B5E2B9;
     margin: 0 auto;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
