@@ -28,6 +28,10 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 }
 
+.no-display {
+  display: none;
+}
+
 /* END General */
 
 /* START Header */
@@ -194,6 +198,22 @@ div.all-settings {
   border: 1px #363C48 solid;
   border-radius: 3px;
   text-align: center;
+}
+
+div.all-settings > div.success-message {
+    display: block;
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+    border: 2px #66A56C solid;
+    color: #66A56C;
+    font-size: 9pt;
+    border-radius: 5px;
+    background: #B5E2B9;
+    padding: 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
 }
 
 div.all-settings > div.account-setting {

@@ -5,6 +5,12 @@
 
 <div class="all-settings">
 
+  <?php
+    if (isset($_POST['SUCCESS_MESSAGE'])) {
+      echo '<div class="success-message">'.$i18n[$_POST['SUCCESS_MESSAGE']].'</div>';
+    }
+  ?>
+
   <div class="account-setting">
     <div class="setting-name"><?= $i18n['ACCOUNT_PROFILE']; ?></div>
     <div class="setting-action"><a href="/profile" class="green-button"><?= $i18n['ACCOUNT_EDIT']; ?></a></div>

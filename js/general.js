@@ -13,7 +13,7 @@ $(document).ready(function(){
 
         if (data === "PROFILE_CHANGED"){
             $("#error-message").hide();
-            $("#success-message").fadeIn("fast");
+            $("#success-post").submit();
         } else {
             $("#error-message").html(data);
             $("#error-message").fadeIn("fast");

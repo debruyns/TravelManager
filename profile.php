@@ -5,7 +5,6 @@
 
 <div class="form-container">
   <div id="error-message" class="error-message"></div>
-  <div id="success-message" class="success-message"><?= $i18n['PROFILE_CHANGE_SUCCESS']; ?></div>
   <div class="form-element">
       <label><?= $i18n['LABEL_FIRSTNAME']; ?></label>
       <input type="text" id="profile_firstname" placeholder="<?= $i18n['PLACEHOLDER_FIRSTNAME']; ?>" value="<?= $auth_user->getFirstname(); ?>" />
@@ -21,6 +20,10 @@
   <button class="save" id="profile_button"><?= $i18n['FORM_SAVE_CHANGES']; ?></button>
   <a href="/account" class="cancel"><?= $i18n['FORM_CANCEL']; ?></a>
 </div>
+
+<form class="no-display" id="success-post" method="POST" action="/account">
+  <input type="hidden" name="SUCCESS_MESSAGE" value="PROFILE_CHANGE_SUCCESS" />
+</form>
 
 <!-- Include template footer -->
 <?php include_once('includes/template/footer.tpl.php'); ?>
