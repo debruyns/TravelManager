@@ -196,10 +196,10 @@ div.top-success-message {
     font-size: 9pt;
     border-radius: 5px;
     background: #B5E2B9;
-    padding: 10px 10px;
     margin: 0 auto;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* END Generic Design */
