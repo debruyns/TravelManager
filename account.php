@@ -3,13 +3,13 @@
 
 <h1 class="page-title"><?= $i18n['ACCOUNT_TITLE']; ?></h1>
 
-<div class="all-settings">
+<?php
+  if (isset($_POST['SUCCESS_MESSAGE'])) {
+    echo '<div class="top-success-message">'.$i18n[$_POST['SUCCESS_MESSAGE']].'</div>';
+  }
+?>
 
-  <?php
-    if (isset($_POST['SUCCESS_MESSAGE'])) {
-      echo '<div class="success-message">'.$i18n[$_POST['SUCCESS_MESSAGE']].'</div>';
-    }
-  ?>
+<div class="all-settings">
 
   <div class="account-setting">
     <div class="setting-name"><?= $i18n['ACCOUNT_PROFILE']; ?></div>

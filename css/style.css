@@ -186,6 +186,22 @@ h1.page-title {
   border-bottom: 1px #363C48 solid;
 }
 
+div.success-message {
+    display: block;
+    width: 90%;
+    max-width:850px;
+    height: auto;
+    border: 2px #66A56C solid;
+    color: #66A56C;
+    font-size: 9pt;
+    border-radius: 5px;
+    background: #B5E2B9;
+    padding: 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
 /* END Generic Design */
 
 /* START Settings Design */
@@ -198,22 +214,6 @@ div.all-settings {
   border: 1px #363C48 solid;
   border-radius: 3px;
   text-align: center;
-}
-
-div.all-settings > div.success-message {
-    display: block;
-    width: 90%;
-    max-width: 700px;
-    height: auto;
-    border: 2px #66A56C solid;
-    color: #66A56C;
-    font-size: 9pt;
-    border-radius: 5px;
-    background: #B5E2B9;
-    padding: 10px 10px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 10px;
 }
 
 div.all-settings > div.account-setting {
