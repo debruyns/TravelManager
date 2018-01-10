@@ -186,7 +186,7 @@ h1.page-title {
   border-bottom: 1px #363C48 solid;
 }
 
-div.success-message {
+div.top-success-message {
     display: block;
     width: 90%;
     max-width:850px;
