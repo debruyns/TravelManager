@@ -11,7 +11,11 @@
         <?php
           $languages = LanguageDAO::getActive();
           foreach ($languages as $language){
-            echo "<option value='".$language->getCode()."'>".$language->getName()."</option>";
+            if ($language->getCode() == $auth_user->getLanguage()){
+              echo "<option value='".$language->getCode()."' selected>".$language->getName()."</option>";
+            } else {
+              echo "<option value='".$language->getCode()."'>".$language->getName()."</option>";
+            }
           }
         ?>
       </select>
