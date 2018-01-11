@@ -123,6 +123,12 @@ $i18n = array(
     "PROFILE_EMAIL_USED"                => "Het opgegeven e-mailadres wordt al gebruikt door een andere account",
     "PROFILE_CHANGE_SUCCESS"            => "Uw profiel is succesvol gewijzigd",
 
+    // Language
+
+    "LANGUAGE_TITLE"                    => "Taal Wijzigen",
+    "LABEL_LANGUAGE"                    => "Taal",
+    "LANGUAGE_CHANGE_SUCCESS"           => "Uw taal is succesvol gewijzigd",
+
     // Forms
 
     "FORM_SAVE_CHANGES"                 => "Opslaan",

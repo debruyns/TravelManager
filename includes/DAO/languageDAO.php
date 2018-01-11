@@ -20,14 +20,14 @@ class LanguageDAO {
             echo 'ERROR: ' . $e->getMessage();
         }
     }
-    
+
     // Get all active languages
     public static function getActive() {
 
         $db = Connect::getConnection();
 
         try {
-            $stmt = $db->prepare("SELECT * FROM LANGUAGES WHERE STATUS='1'");
+            $stmt = $db->prepare("SELECT * FROM LANGUAGES WHERE STATUS='1' ORDER BY NAME ASC");
             $stmt->execute();
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $resultSet = array();
@@ -60,7 +60,7 @@ class LanguageDAO {
             return NULL;
         }
     }
-    
+
     // Get a language by Code
     public static function checkActive($code) {
 

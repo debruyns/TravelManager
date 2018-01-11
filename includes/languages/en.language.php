@@ -123,6 +123,12 @@ $i18n = array(
     "PROFILE_EMAIL_USED"                => "The provided email address is already being used by another account",
     "PROFILE_CHANGE_SUCCESS"            => "Your profile has been successfully updated",
 
+    // Language
+
+    "LANGUAGE_TITLE"                    => "Change Language",
+    "LABEL_LANGUAGE"                    => "Language",
+    "LANGUAGE_CHANGE_SUCCESS"           => "Your language has been successfully updated",
+
     // Forms
 
     "FORM_SAVE_CHANGES"                 => "Save Changes",
