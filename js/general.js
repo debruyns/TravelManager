@@ -84,7 +84,7 @@ $(document).ready(function(){
   $(".form-element").click(function(){
 
       $(this).find("input").focus();
-      $(this).find("select").select();
+      $(this).find("select")..attr("size", 10);
 
   });
 

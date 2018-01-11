@@ -390,8 +390,12 @@ div.form-container > .form-element > select {
     font-size: 8pt;
     margin-top: 5px;
     padding: 0px;
-    text-indent: 0;
     width: 100%;
+}
+
+div.form-container > .form-element > select > option {
+  padding: 0px;
+  text-indent: 0;
 }
 
 div.form-container > button.save {
