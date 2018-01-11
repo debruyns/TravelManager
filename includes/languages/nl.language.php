@@ -102,6 +102,7 @@ $i18n = array(
     "PAGE_TITLE_ACCOUNT"                => "Account",
     "PAGE_TITLE_LOGOUT"                 => "Uitloggen",
     "PAGE_TITLE_PROFILE"                => "Profiel Wijzigen",
+    "PAGE_TITLE_LANGUAGE"               => "Taal Wijzigen",
 
     // Account
 

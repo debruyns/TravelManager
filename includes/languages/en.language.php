@@ -102,6 +102,7 @@ $i18n = array(
     "PAGE_TITLE_ACCOUNT"                => "Account",
     "PAGE_TITLE_LOGOUT"                 => "Logout",
     "PAGE_TITLE_PROFILE"                => "Edit Profile",
+    "PAGE_TITLE_LANGUAGE"               => "Change Language",
 
     // Account
 
