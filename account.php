@@ -13,12 +13,12 @@
 
   <div class="account-setting">
     <div class="setting-name"><?= $i18n['ACCOUNT_PROFILE']; ?></div>
-    <div class="setting-action"><a href="/profile" class="green-button"><?= $i18n['ACCOUNT_EDIT']; ?></a></div>
+    <div class="setting-action"><a href="/account/profile" class="green-button"><?= $i18n['ACCOUNT_EDIT']; ?></a></div>
   </div>
 
   <div class="account-setting">
     <div class="setting-name"><?= $i18n['ACCOUNT_LANGUAGE']; ?></div>
-    <div class="setting-action"><a href="#" class="green-button"><?= $i18n['ACCOUNT_EDIT']; ?></a></div>
+    <div class="setting-action"><a href="account/language" class="green-button"><?= $i18n['ACCOUNT_EDIT']; ?></a></div>
   </div>
 
   <div class="account-setting">
