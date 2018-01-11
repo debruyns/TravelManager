@@ -84,9 +84,7 @@ $(document).ready(function(){
   $(".form-element").click(function(){
 
       $(this).find("input").focus();
-      var select = $(this).find("select");
-      var length = $(select).find("option").length;
-      select.attr('size',length);
+      $(this).find("select").click();
 
   });
 
