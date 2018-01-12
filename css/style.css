@@ -381,21 +381,19 @@ div.form-container > .form-element:focus-within {
     background: #D0D0D0;
 }
 
-div.form-container > .form-element > select {
-    display: block;
-    border: 0px;
-    background: transparent;
-    outline: none;
-    color: #333;
-    font-size: 8pt;
-    margin-top: 5px;
-    padding: 0px;
-    width: 100%;
+div.form-container > table.language-selection {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0px;
 }
 
-div.form-container > .form-element > select > option {
-  padding: 0px;
-  text-indent: 0;
+div.form-container > table.language-selection > tr > td:nth-child(odd) {
+  background: red;
+}
+
+div.form-container > table.language-selection > tr > td:nth-child(even) {
+  background: blue;
 }
 
 div.form-container > button.save {

@@ -5,21 +5,30 @@
 
 <div class="form-container">
   <div id="error-message" class="error-message"></div>
-  <div class="form-element">
-      <label><?= $i18n['LABEL_LANGUAGE']; ?></label>
-      <select>
-        <?php
-          $languages = LanguageDAO::getActive();
-          foreach ($languages as $language){
-            if ($language->getCode() == $auth_user->getLanguage()){
-              echo "<option value='".$language->getCode()."' selected>".$language->getName()."</option>";
-            } else {
-              echo "<option value='".$language->getCode()."'>".$language->getName()."</option>";
-            }
-          }
-        ?>
-      </select>
-  </div>
+  <table class="language-selection">
+    <?php
+      $count_languages = 0;
+      $count_row = 0;
+      $languages = LanguageDAO::getActive();
+      foreach ($languages as $language){
+
+        $count_languages++;
+        $count_row++;
+
+        if ($count_row == 1){
+          echo "<tr>";
+        }
+
+        echo "<td>".$language->getName()."</td>";
+
+        if ($count_row == 2 || $count_languages == count($languages)){
+          echo "</tr>";
+          $count_row = 0;
+        }
+
+      }
+    ?>
+  </table>
   <button class="save" id="profile_button"><?= $i18n['FORM_SAVE_CHANGES']; ?></button>
   <a href="/account" class="cancel"><?= $i18n['FORM_CANCEL']; ?></a>
 </div>
