@@ -424,6 +424,10 @@ div.form-container > div.language-selection > div > div:hover {
   cursor: pointer;
 }
 
+div.form-container > div.language-selection > div > div.active {
+  background: #D0D0D0;
+}
+
 div.form-container > button.save {
     display: inline;
     margin: 0 auto;

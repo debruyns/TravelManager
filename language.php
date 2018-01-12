@@ -10,7 +10,11 @@
       $languages = LanguageDAO::getActive();
       foreach ($languages as $language){
 
-        echo "<div><div>".$language->getName()."</div></div>";
+        if ($auth_user->getLanguage() == $language->getCode()){
+          echo "<div><div class='active'>".$language->getName()."</div></div>";
+        } else {
+          echo "<div><div>".$language->getName()."</div></div>";
+        }
 
       }
     ?>
