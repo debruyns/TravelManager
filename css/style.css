@@ -381,21 +381,18 @@ div.form-container > .form-element:focus-within {
     background: #D0D0D0;
 }
 
-div.form-container > table.language-selection {
-  display: block;
+div.form-container > div.language-selection {
   width: 100%;
   height: auto;
-  border: 0px;
-  text-align: center;
-  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: left;
 }
 
-div.form-container > table.language-selection > tr {
-  width: 100%;
-}
-
-div.form-container > table.language-selection > tr > td {
+div.form-container > div.language-selection > div {
+  display: inline-block;
   width: 50%;
+  text-align: right;
 }
 
 div.form-container > button.save {
