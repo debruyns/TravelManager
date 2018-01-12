@@ -129,6 +129,7 @@ $i18n = array(
     "LANGUAGE_TITLE"                    => "Change Language",
     "LABEL_LANGUAGE"                    => "Language",
     "LANGUAGE_CHANGE_SUCCESS"           => "Your language has been successfully updated",
+    "LANGUAGE_INVALID"                  => "The selected language is not valid",
 
     // Forms
 

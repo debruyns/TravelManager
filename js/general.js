@@ -22,8 +22,6 @@ $(document).ready(function(){
     var firstname = $("#profile_firstname").val();
     var lastname = $("#profile_lastname").val();
 
-    $("#success-message").hide();
-
     $.post("includes/scripts/changeProfile.php", { email:email, firstname:firstname, lastname:lastname }, function(data){
 
         if (data === "PROFILE_CHANGED"){
@@ -37,6 +35,20 @@ $(document).ready(function(){
     });
 
   }
+
+  $("#language_button").click(function(){
+    $.post("includes/scripts/changeAccountLanguage.php", { language:languageSelection }, function(data){
+
+        if (data === "LANGUAGE_CHANGED"){
+            $("#error-message").hide();
+            $("#success-post").submit();
+        } else {
+            $("#error-message").html(data);
+            $("#error-message").fadeIn("fast");
+        }
+
+    });
+  });
 
   $("#profile_button").click(function(){
       startProfileChange();

@@ -205,6 +205,23 @@ class UserDAO {
         }
     }
 
+    // Update Language
+    public static function updateLanguage($id, $language) {
+
+        $db = Connect::getConnection();
+
+        try {
+            $stmt = $db->prepare("UPDATE USERS SET LANGUAGE=:language WHERE ID=:id");
+            $stmt->bindValue(':language', $language, PDO::PARAM_STR);
+            $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            echo 'ERROR: ' . $e->getMessage();
+            return false;
+        }
+    }
+
     // Create new user
     public static function createUser($firstname, $lastname, $email, $password) {
 

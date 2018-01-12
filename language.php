@@ -19,7 +19,7 @@
       }
     ?>
   </div>
-  <button class="save" id="profile_button"><?= $i18n['FORM_SAVE_CHANGES']; ?></button>
+  <button class="save" id="language_button"><?= $i18n['FORM_SAVE_CHANGES']; ?></button>
   <a href="/account" class="cancel"><?= $i18n['FORM_CANCEL']; ?></a>
 </div>
 

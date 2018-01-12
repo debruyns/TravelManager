@@ -129,6 +129,7 @@ $i18n = array(
     "LANGUAGE_TITLE"                    => "Taal Wijzigen",
     "LABEL_LANGUAGE"                    => "Taal",
     "LANGUAGE_CHANGE_SUCCESS"           => "Uw taal is succesvol gewijzigd",
+    "LANGUAGE_INVALID"                  => "De geselecteerde taal is niet geldig",
 
     // Forms
 
