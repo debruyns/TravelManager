@@ -406,7 +406,7 @@ div.form-container > div.language-selection > div:nth-of-type(odd) {
 
 div.form-container > div.language-selection > div > div {
   display: inline-block;
-  width: 45%;
+  width: 90%;
   max-width: 250px;
   text-align: center;
   margin-left: 20px;
