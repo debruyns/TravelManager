@@ -387,14 +387,15 @@ div.form-container > table.language-selection {
   height: auto;
   border: 0px;
   text-align: center;
+  border-collapse: collapse;
 }
 
-div.form-container > table.language-selection > tr > td:nth-child(odd) {
-  background: red;
+div.form-container > table.language-selection > tr {
+  width: 100%;
 }
 
-div.form-container > table.language-selection > tr > td:nth-child(even) {
-  background: blue;
+div.form-container > table.language-selection > tr > td {
+  width: 50%;
 }
 
 div.form-container > button.save {
