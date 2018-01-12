@@ -386,6 +386,7 @@ div.form-container > table.language-selection {
   width: 100%;
   height: auto;
   border: 0px;
+  text-align: center;
 }
 
 div.form-container > table.language-selection > tr > td:nth-child(odd) {
