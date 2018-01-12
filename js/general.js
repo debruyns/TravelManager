@@ -90,8 +90,8 @@ $(document).ready(function(){
   });
 
   // Get the default selected language
-  languageSelection = $(document).find("div.language-selection > div > div.active").attr("data-lcode");
-  alert(languageSelection); 
+  languageSelection = $("div.language-selection > div > div.active").attr("data-lcode");
+  alert(languageSelection);
 
   // Function to rotate
   jQuery.fn.rotate = function(degrees) {
