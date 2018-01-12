@@ -1,6 +1,13 @@
 $(document).ready(function(){
 
+  // Get the default selected language
   var languageSelection = "";
+  languageSelection = $("div.language-selection > div > div.active").attr("data-lcode");
+
+  // Change language language selection
+  $("div.language-selection > div > div").click(function(){
+    $("div.language-selection > div > div").removeClass("active");
+  });
 
   /* START Profile Page */
 
@@ -88,10 +95,6 @@ $(document).ready(function(){
       $(this).find("input").focus();
 
   });
-
-  // Get the default selected language
-  languageSelection = $("div.language-selection > div > div.active").attr("data-lcode");
-  alert(languageSelection);
 
   // Function to rotate
   jQuery.fn.rotate = function(degrees) {
