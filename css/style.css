@@ -432,6 +432,11 @@ div.form-container > div.language-selection > div > div.active:hover {
   cursor: default !important;
 }
 
+div.form-container > div.language-selection > div > div > img {
+  width: 25px;
+  height: auto;
+}
+
 div.form-container > button.save {
     display: inline;
     margin: 0 auto;

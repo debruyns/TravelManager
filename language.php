@@ -11,9 +11,9 @@
       foreach ($languages as $language){
 
         if ($auth_user->getLanguage() == $language->getCode()){
-          echo "<div><div class='active' data-lcode='".$language->getCode()."'>".$language->getName()."</div></div>";
+          echo "<div><div class='active' data-lcode='".$language->getCode()."'><img src='images/languages/". strtolower($language->getCode()).".png' /><br />".$language->getName()."</div></div>";
         } else {
-          echo "<div><div data-lcode='".$language->getCode()."'>".$language->getName()."</div></div>";
+          echo "<div><div data-lcode='".$language->getCode()."'><img src='images/languages/". strtolower($language->getCode()).".png' /><br />".$language->getName()."</div></div>";
         }
 
       }
