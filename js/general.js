@@ -7,6 +7,9 @@ $(document).ready(function(){
   // Change language language selection
   $("div.language-selection > div > div").click(function(){
     $("div.language-selection > div > div").removeClass("active");
+    $(this).addClass("active");
+    languageSelection = $(this).attr("data-lcode");
+    alert(languageSelection);
   });
 
   /* START Profile Page */
