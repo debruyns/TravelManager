@@ -10,7 +10,7 @@
       $languages = LanguageDAO::getActive();
       foreach ($languages as $language){
 
-        echo "<div>".$language->getName()."</div>";
+        echo "<div><div>".$language->getName()."</div></div>";
 
       }
     ?>

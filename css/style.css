@@ -387,6 +387,7 @@ div.form-container > div.language-selection {
   margin: 0 auto;
   padding: 0px;
   text-align: left;
+  margin-top: 30px;
 }
 
 div.form-container > div.language-selection > div {
@@ -400,6 +401,16 @@ div.form-container > div.language-selection > div:nth-of-type(even) {
 
 div.form-container > div.language-selection > div:nth-of-type(odd) {
   text-align: right;
+}
+
+div.form-container > div.language-selection > div > div {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  border: 1px #D0D0D0 solid;
+  font-size: 10pt;
+  color: #333;
 }
 
 div.form-container > button.save {
