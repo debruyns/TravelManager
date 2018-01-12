@@ -392,6 +392,13 @@ div.form-container > div.language-selection {
 div.form-container > div.language-selection > div {
   display: inline-block;
   width: 50%;
+}
+
+div.form-container > div.language-selection > div:nth-of-type(even) {
+  text-align: left;
+}
+
+div.form-container > div.language-selection > div:nth-of-type(odd) {
   text-align: right;
 }
 
