@@ -104,6 +104,7 @@ $i18n = array(
     "PAGE_TITLE_PROFILE"                => "Profiel Wijzigen",
     "PAGE_TITLE_LANGUAGE"               => "Taal Wijzigen",
     "PAGE_TITLE_PASSWORD"               => "Wachtwoord Wijzigen",
+    "PAGE_TITLE_TWOSTEP"                => "2-Staps Verificatie",
 
     // Account
 
@@ -147,6 +148,12 @@ $i18n = array(
     "PASSWORD_SHORT"                    => "Uw nieuwe wachtwoord moet uit minimaal 8 tekens bestaan",
     "PASSWORD_NO_MATCH"                 => "De opgegeven nieuwe wachtwoorden komen niet overeen",
     "PASSWORD_TECH_ERROR"               => "Fout, gelieve opnieuw te proberen",
+
+    // 2-Step Verification
+
+    "TWOSTEP_TITLE"                     => "2-Staps Verificatie",
+    "LABEL_TWOSTEP_CODE"                => "Authenticatie Code",
+    "PLACEHOLDER_TWOSTEP_CODE"          => "Vul uw 6 cijferige authenticatie code in",
 
     // Forms
 

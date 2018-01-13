@@ -104,6 +104,7 @@ $i18n = array(
     "PAGE_TITLE_PROFILE"                => "Edit Profile",
     "PAGE_TITLE_LANGUAGE"               => "Change Language",
     "PAGE_TITLE_PASSWORD"               => "Change Password",
+    "PAGE_TITLE_TWOSTEP"                => "2-Step Verification",
 
     // Account
 
@@ -147,6 +148,12 @@ $i18n = array(
     "PASSWORD_SHORT"                    => "Your new password must consist of minimum 8 characters",
     "PASSWORD_NO_MATCH"                 => "The provided new passwords do not match",
     "PASSWORD_TECH_ERROR"               => "An error has occurred, please try again",
+
+    // 2-Step Verification
+
+    "TWOSTEP_TITLE"                     => "2-Step Verification",
+    "LABEL_TWOSTEP_CODE"                => "Authentication Code",
+    "PLACEHOLDER_TWOSTEP_CODE"          => "Enter your 6-digit authentication code",
 
     // Forms
 
