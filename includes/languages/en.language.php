@@ -103,6 +103,7 @@ $i18n = array(
     "PAGE_TITLE_LOGOUT"                 => "Logout",
     "PAGE_TITLE_PROFILE"                => "Edit Profile",
     "PAGE_TITLE_LANGUAGE"               => "Change Language",
+    "PAGE_TITLE_PASSWORD"               => "Change Password",
 
     // Account
 
@@ -130,6 +131,17 @@ $i18n = array(
     "LABEL_LANGUAGE"                    => "Language",
     "LANGUAGE_CHANGE_SUCCESS"           => "Your language has been successfully updated",
     "LANGUAGE_INVALID"                  => "The selected language is not valid",
+
+    // Password
+
+    "PASSWORD_TITLE"                    => "Change Password",
+    "LABEL_CONFIRM_PASSWORD"            => "Current Password",
+    "PLACEHOLDER_CURRENT_PASSWORD"      => "Enter your current password",
+    "LABEL_NEW_PASSWORD"                => "New Password",
+    "PLACEHOLDER_NEW_PASSWORD"          => "Enter a new password",
+    "LABEL_CONFIRM_PASSWORD"            => "Confirm Password",
+    "PLACEHOLDER_CONFIRM_PASSWORD"      => "Confirm your new password",
+    "PASSWORD_CHANGE_SUCCESS"           => "Your password has been successfully updated",
 
     // Forms
 

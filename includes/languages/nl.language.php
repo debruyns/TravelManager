@@ -103,6 +103,7 @@ $i18n = array(
     "PAGE_TITLE_LOGOUT"                 => "Uitloggen",
     "PAGE_TITLE_PROFILE"                => "Profiel Wijzigen",
     "PAGE_TITLE_LANGUAGE"               => "Taal Wijzigen",
+    "PAGE_TITLE_PASSWORD"               => "Wachtwoord Wijzigen",
 
     // Account
 
@@ -130,6 +131,17 @@ $i18n = array(
     "LABEL_LANGUAGE"                    => "Taal",
     "LANGUAGE_CHANGE_SUCCESS"           => "Uw taal is succesvol gewijzigd",
     "LANGUAGE_INVALID"                  => "De geselecteerde taal is niet geldig",
+
+    // Password
+
+    "PASSWORD_TITLE"                    => "Wachtwoord Wijzigen",
+    "LABEL_CONFIRM_PASSWORD"            => "Huidig Wachtwoord",
+    "PLACEHOLDER_CURRENT_PASSWORD"      => "Vul uw huidig wachtwoord in",
+    "LABEL_NEW_PASSWORD"                => "Nieuw Wachtwoord",
+    "PLACEHOLDER_NEW_PASSWORD"          => "Vul een nieuw wachtwoord in",
+    "LABEL_CONFIRM_PASSWORD"            => "Bevestig Wachtwoord",
+    "PLACEHOLDER_CONFIRM_PASSWORD"      => "Bevestig uw nieuwe wachtwoord",
+    "PASSWORD_CHANGE_SUCCESS"           => "Uw wachtwoord is succesvol gewijzigd",
 
     // Forms
 
