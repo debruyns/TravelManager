@@ -145,7 +145,7 @@ $i18n = array(
     "PASSWORD_CHECK_FIELDS"             => "Gelieve alle velden in te vullen",
     "PASSWORD_INVALID_CURRENT"          => "Het opgegeven huidig wachtwoord is niet correct",
     "PASSWORD_SHORT"                    => "Uw nieuwe wachtwoord moet uit minimaal 8 tekens bestaan",
-    "PASSWORD_NO_MATCH"                 => "De opgegeven nieuwe wachtwoord komen niet overeen",
+    "PASSWORD_NO_MATCH"                 => "De opgegeven nieuwe wachtwoorden komen niet overeen",
     "PASSWORD_TECH_ERROR"               => "Fout, gelieve opnieuw te proberen",
 
     // Forms
