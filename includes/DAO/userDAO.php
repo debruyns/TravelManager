@@ -133,6 +133,39 @@ class UserDAO {
         }
     }
 
+    // Activate Dual Step
+    public static function activateDualStep($user, $code) {
+
+        $db = Connect::getConnection();
+
+        try {
+            $stmt = $db->prepare("UPDATE USERS SET DUALSTEPCODE=:code, DUALSTEP='1' WHERE ID=:user");
+            $stmt->bindParam(':code', $code, PDO::PARAM_STR);
+            $stmt->bindParam(':user', $user, PDO::PARAM_INT);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            echo 'ERROR: ' . $e->getMessage();
+            return false;
+        }
+    }
+
+    // Deactivate Dual Step
+    public static function deactivateDualStep($user) {
+
+        $db = Connect::getConnection();
+
+        try {
+            $stmt = $db->prepare("UPDATE USERS SET DUALSTEP='0', DUALSTEPCODE='' WHERE ID=:user");
+            $stmt->bindParam(':user', $user, PDO::PARAM_INT);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            echo 'ERROR: ' . $e->getMessage();
+            return false;
+        }
+    }
+
     // Get a user by ID
     public static function getById($id) {
 

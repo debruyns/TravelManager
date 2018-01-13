@@ -123,6 +123,37 @@ $(document).ready(function(){
 
   /* END Profile Page */
 
+  /* START Two Step Page */
+
+  function startTwoStepChange(){
+    var code = $("#twostep_code").val();
+
+    $.post("includes/scripts/changeAccountVerification.php", { code:code }, function(data){
+
+        if (data === "TWOSTEP_CHANGED"){
+            $("#error-message").hide();
+            $("#success-post").submit();
+        } else {
+            $("#error-message").html(data);
+            $("#error-message").fadeIn("fast");
+        }
+
+    });
+
+  }
+
+  $("#twostep_button").click(function(){
+      startTwoStepChange();
+  });
+
+  $("#twostep_code").keyup(function(e){
+      if (e.which === 13){
+          startTwoStepChange();
+      }
+  });
+
+  /* END Two Step Page */
+
   // Show menu when clicking on the menu selector
   $("#menu-sel").click(function(){
 

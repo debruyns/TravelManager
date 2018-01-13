@@ -12,7 +12,8 @@
       $auth = new Authenticator();
       $new_secret = $auth->generateRandomSecret();
       $new_QR = $auth->getQR($auth_user->getEmail(), $new_secret, "TravelManager");
-      
+      unset($_SESSION['DUALSTEP_NEW_CODE']);
+      $_SESSION['DUALSTEP_NEW_CODE'] = $new_secret;
       echo "<img src='{$new_QR}' />";
     }
   ?>
@@ -26,7 +27,7 @@
 </div>
 
 <form class="no-display" id="success-post" method="POST" action="/account">
-  <input type="hidden" name="SUCCESS_MESSAGE" value="PASSWORD_CHANGE_SUCCESS" />
+  <input type="hidden" name="SUCCESS_MESSAGE" value="TWOSTEP_CHANGE_SUCCESS" />
 </form>
 
 <!-- Include template footer -->
