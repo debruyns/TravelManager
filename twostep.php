@@ -4,10 +4,17 @@
 <h1 class="page-title"><?= $i18n['TWOSTEP_TITLE']; ?></h1>
 
 <div class="form-container">
+  <?php
+    if ($auth_user->getDualStep() == "1"){
+      echo "<h3>".$i18n['TWOSTEP_DISABLE_TEXT']."</h3>";
+    } else {
+      echo "<h3>".$i18n['TWOSTEP_ENABLE_TEXT']."</h3>";
+    }
+  ?>
   <div id="error-message" class="error-message"></div>
   <div class="form-element">
       <label><?= $i18n['LABEL_TWOSTEP_CODE']; ?></label>
-      <input type="text" id="twostep_code" mawlength="6" placeholder="<?= $i18n['PLACEHOLDER_TWOSTEP_CODE']; ?>" />
+      <input type="text" id="twostep_code" maxlength="6" placeholder="<?= $i18n['PLACEHOLDER_TWOSTEP_CODE']; ?>" />
   </div>
   <button class="save" id="twostep_button"><?= $i18n['FORM_SAVE_CHANGES']; ?></button>
   <a href="/account" class="cancel"><?= $i18n['FORM_CANCEL']; ?></a>
