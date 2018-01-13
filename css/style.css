@@ -325,6 +325,14 @@ div.form-container > h3 {
   margin-bottom: 20px;
 }
 
+div.form-container > img {
+  width: 60%;
+  height: auto;
+  max-width: 200px;
+  padding: 10px;
+  border: 1px #000 solid;
+}
+
 div.form-container > div.error-message {
     display: none;
     width: 90%;

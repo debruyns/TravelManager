@@ -12,6 +12,7 @@
       $auth = new Authenticator();
       $new_secret = $auth->generateRandomSecret();
       $new_QR = $auth->getQR($auth_user->getEmail(), $new_secret, "TravelManager");
+      
       echo "<img src='{$new_QR}' />";
     }
   ?>
