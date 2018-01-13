@@ -135,7 +135,7 @@ $i18n = array(
     // Password
 
     "PASSWORD_TITLE"                    => "Change Password",
-    "LABEL_CONFIRM_PASSWORD"            => "Current Password",
+    "LABEL_CURRENT_PASSWORD"            => "Current Password",
     "PLACEHOLDER_CURRENT_PASSWORD"      => "Enter your current password",
     "LABEL_NEW_PASSWORD"                => "New Password",
     "PLACEHOLDER_NEW_PASSWORD"          => "Enter a new password",

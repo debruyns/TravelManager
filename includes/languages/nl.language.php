@@ -135,7 +135,7 @@ $i18n = array(
     // Password
 
     "PASSWORD_TITLE"                    => "Wachtwoord Wijzigen",
-    "LABEL_CONFIRM_PASSWORD"            => "Huidig Wachtwoord",
+    "LABEL_CURRENT_PASSWORD"            => "Huidig Wachtwoord",
     "PLACEHOLDER_CURRENT_PASSWORD"      => "Vul uw huidig wachtwoord in",
     "LABEL_NEW_PASSWORD"                => "Nieuw Wachtwoord",
     "PLACEHOLDER_NEW_PASSWORD"          => "Vul een nieuw wachtwoord in",
