@@ -35,9 +35,9 @@
     <div class="setting-name"><?= $i18n['ACCOUNT_DUALSTEP']; ?></div>
     <div class="setting-action">
       <?php if ($auth_user->getDualStep() == "1") { ?>
-        <a href="#" class="red-button"><?= $i18n['ACCOUNT_DISABLE']; ?></a>
+        <a href="account/verification" class="red-button"><?= $i18n['ACCOUNT_DISABLE']; ?></a>
       <?php } else { ?>
-        <a href="#" class="green-button"><?= $i18n['ACCOUNT_ENABLE']; ?></a>
+        <a href="account/verification" class="green-button"><?= $i18n['ACCOUNT_ENABLE']; ?></a>
       <?php } ?>
     </div>
   </div>
