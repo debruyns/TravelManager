@@ -331,6 +331,7 @@ div.form-container > img {
   max-width: 200px;
   padding: 10px;
   border: 1px #000 solid;
+  background: #FFF;
 }
 
 div.form-container > div.error-message {
