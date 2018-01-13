@@ -9,6 +9,10 @@
       echo "<h3>".$i18n['TWOSTEP_DISABLE_TEXT']."</h3>";
     } else {
       echo "<h3>".$i18n['TWOSTEP_ENABLE_TEXT']."</h3>";
+      $auth = new Authenticator();
+      $new_secret = $auth->generateRandomSecret();
+      $new_QR = $auth->getQR($auth_user->getEmail(), $new_secret, "TravelManager");
+      echo "<img src='{$QR}' />";
     }
   ?>
   <div id="error-message" class="error-message"></div>
