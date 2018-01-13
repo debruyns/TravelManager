@@ -142,6 +142,11 @@ $i18n = array(
     "LABEL_CONFIRM_PASSWORD"            => "Confirm Password",
     "PLACEHOLDER_CONFIRM_PASSWORD"      => "Confirm your new password",
     "PASSWORD_CHANGE_SUCCESS"           => "Your password has been successfully updated",
+    "PASSWORD_CHECK_FIELDS"             => "Please fill in all fields",
+    "PASSWORD_INVALID_CURRENT"          => "The provided current password is not correct",
+    "PASSWORD_SHORT"                    => "Your new password must consist of minimum 8 characters",
+    "PASSWORD_NO_MATCH"                 => "The provided new passwords do not match",
+    "PASSWORD_TECH_ERROR"               => "An error has occurred, please try again",
 
     // Forms
 

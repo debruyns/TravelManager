@@ -15,6 +15,69 @@ $(document).ready(function(){
 
   });
 
+  /* START Password Page */
+
+  function startPasswordChange(){
+    var current_password = $("#password_current").val();
+    var new_password = $("#password_new").val();
+    var confirm_password = $("#password_confirm").val();
+
+    $.post("includes/scripts/changeAccountPassword.php", { current:current_password, new:new_password, confirm:confirm_password }, function(data){
+
+        if (data === "PASSWORD_CHANGED"){
+            $("#error-message").hide();
+            $("#success-post").submit();
+        } else {
+            $("#error-message").html(data);
+            $("#error-message").fadeIn("fast");
+        }
+
+    });
+
+  }
+
+  $("#password_button").click(function(){
+      startPasswordChange();
+  });
+
+  $("#password_current").keyup(function(e){
+      if (e.which === 13){
+          startPasswordChange();
+      }
+  });
+
+  $("#password_new").keyup(function(e){
+      if (e.which === 13){
+          startPasswordChange();
+      }
+  });
+
+  $("#password_confirm").keyup(function(e){
+      if (e.which === 13){
+          startPasswordChange();
+      }
+  });
+
+  /* END Password Page */
+
+  /* START Language Page */
+
+  $("#language_button").click(function(){
+    $.post("includes/scripts/changeAccountLanguage.php", { language:languageSelection }, function(data){
+
+        if (data === "LANGUAGE_CHANGED"){
+            $("#error-message").hide();
+            $("#success-post").submit();
+        } else {
+            $("#error-message").html(data);
+            $("#error-message").fadeIn("fast");
+        }
+
+    });
+  });
+
+  /* END Language Page */
+
   /* START Profile Page */
 
   function startProfileChange(){
@@ -35,20 +98,6 @@ $(document).ready(function(){
     });
 
   }
-
-  $("#language_button").click(function(){
-    $.post("includes/scripts/changeAccountLanguage.php", { language:languageSelection }, function(data){
-
-        if (data === "LANGUAGE_CHANGED"){
-            $("#error-message").hide();
-            $("#success-post").submit();
-        } else {
-            $("#error-message").html(data);
-            $("#error-message").fadeIn("fast");
-        }
-
-    });
-  });
 
   $("#profile_button").click(function(){
       startProfileChange();

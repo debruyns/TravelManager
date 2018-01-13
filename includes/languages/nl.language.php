@@ -57,7 +57,7 @@ $i18n = array(
     "RETRIEVE_SUCCESS"          => "Instructies om uw wachtwoord opnieuw in te stellen zijn naar u verzonden",
     "RETRIEVE_EMAIL_NOT_FOUND"  => "Dit e-mailadres is niet gelinkt aan een account",
     "RETRIEVE_MAX_DAILY"        => "Maximum aantal resets per dag bereikt",
-    "RETRIEVE_TECH_ERROR"       =>  "Fout, gelieve opnieuw te proberen",
+    "RETRIEVE_TECH_ERROR"       => "Fout, gelieve opnieuw te proberen",
     "RETRIEVE_EMAIL_SUBJECT"    => "Wachtwoord Herstel",
     "RETRIEVE_EMAIL_TITLE"      => "Beste",
     "RETRIEVE_EMAIL_CONTENT"    => "Klik op de onderstaande link om een nieuw wachtwoord in te stellen voor uw account (24 uur geldig):",
@@ -142,6 +142,11 @@ $i18n = array(
     "LABEL_CONFIRM_PASSWORD"            => "Bevestig Wachtwoord",
     "PLACEHOLDER_CONFIRM_PASSWORD"      => "Bevestig uw nieuwe wachtwoord",
     "PASSWORD_CHANGE_SUCCESS"           => "Uw wachtwoord is succesvol gewijzigd",
+    "PASSWORD_CHECK_FIELDS"             => "Gelieve alle velden in te vullen",
+    "PASSWORD_INVALID_CURRENT"          => "Het opgegeven huidig wachtwoord is niet correct",
+    "PASSWORD_SHORT"                    => "Uw nieuwe wachtwoord moet uit minimaal 8 tekens bestaan",
+    "PASSWORD_NO_MATCH"                 => "De opgegeven nieuwe wachtwoord komen niet overeen",
+    "PASSWORD_TECH_ERROR"               => "Fout, gelieve opnieuw te proberen",
 
     // Forms
 
