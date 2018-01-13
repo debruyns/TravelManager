@@ -319,6 +319,10 @@ div.form-container > h3 {
   font-size: 11pt;
   font-weight: normal;
   text-align: center;
+  margin: 0 auto;
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 div.form-container > div.error-message {
