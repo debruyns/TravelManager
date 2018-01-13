@@ -27,6 +27,7 @@ if (!empty($_POST['code'])){
 
         if (UserDAO::deactivateDualStep($profile->getId())){
           echo "TWOSTEP_CHANGED";
+          unset($_SESSION['DUALSTEP_NEW_CODE']);
         } else {
           echo $i18n['TWOSTEP_TECH_ERROR'];
         }
@@ -35,6 +36,7 @@ if (!empty($_POST['code'])){
 
         if (UserDAO::activateDualStep($profile->getId(), $check_code)){
           echo "TWOSTEP_CHANGED";
+          unset($_SESSION['DUALSTEP_NEW_CODE']);
         } else {
           echo $i18n['TWOSTEP_TECH_ERROR'];
         }
