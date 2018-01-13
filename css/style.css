@@ -313,6 +313,14 @@ div.form-container {
   text-align: center;
 }
 
+div.form-container > h3 {
+  display: block;
+  width: 90%;
+  font-size: 11pt;
+  font-weight: normal;
+  text-align: center;
+}
+
 div.form-container > div.error-message {
     display: none;
     width: 90%;
