@@ -154,7 +154,7 @@ $i18n = array(
     "TWOSTEP_TITLE"                     => "2-Staps Verificatie",
     "LABEL_TWOSTEP_CODE"                => "Authenticatie Code",
     "PLACEHOLDER_TWOSTEP_CODE"          => "Vul uw 6 cijferige authenticatie code in",
-    "TWOSTEP_ENABLE_TEXT"               => "Scan de QR code met Google Authenticator en vul de gegenereerde authenticatie code in om 2-Staps Verificatie te activeren",
+    "TWOSTEP_ENABLE_TEXT"               => "Scan de QR code met Google Authenticator en vul de authenticatie code in",
     "TWOSTEP_DISABLE_TEXT"              => "Vul uw authenticatie code in om 2-Staps Verificatie uit te schakelen",
 
     // Forms
