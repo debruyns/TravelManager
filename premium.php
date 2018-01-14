@@ -6,7 +6,8 @@
 <div class="form-container">
   <?php
     if ($auth_user->getPremium() == "1"){
-      echo "<h3>".$i18n['PREMIUM_YES']."</h3>";
+      $expire = date('d-m-Y', strtotime($auth_user->getPremiumEnd() . ' +1 day'));
+      echo "<h3>".$i18n['PREMIUM_YES']." ".$expire.")</h3>";
     } else {
       echo "<h3>".$i18n['PREMIUM_NO']."</h3>";
     }

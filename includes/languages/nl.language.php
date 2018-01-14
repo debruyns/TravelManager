@@ -164,8 +164,8 @@ $i18n = array(
     // Premium
 
     "PREMIUM_TITLE"                     => "Premium Lidmaatschap",
-    "PREMIUM_YES"                       => "Status: PREMIUM ACCOUNT",
-    "PREMIUM_NO"                        => "Status: STANDARD ACCOUNT",
+    "PREMIUM_YES"                       => "Status: <b>PREMIUM ACCOUNT</b> (Vervalt op",
+    "PREMIUM_NO"                        => "Status: <b>STANDARD ACCOUNT</b>",
 
     // Forms
 
