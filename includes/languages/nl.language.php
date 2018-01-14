@@ -105,6 +105,7 @@ $i18n = array(
     "PAGE_TITLE_LANGUAGE"               => "Taal Wijzigen",
     "PAGE_TITLE_PASSWORD"               => "Wachtwoord Wijzigen",
     "PAGE_TITLE_TWOSTEP"                => "2-Staps Verificatie",
+    "PAGE_TITLE_PREMIUM"                => "Premium Lidmaatschap",
 
     // Account
 
@@ -159,6 +160,12 @@ $i18n = array(
     "TWOSTEP_CODE_INVALID"              => "Authenticatie code niet geldig",
     "TWOSTEP_TECH_ERROR"                => "Fout, gelieve opnieuw te proberen",
     "TWOSTEP_CHANGE_SUCCESS"            => "Uw 2-Staps Verificatie instellingen zijn succesvol gewijzigd",
+
+    // Premium
+
+    "PREMIUM_TITLE"                     => "Premium Lidmaatschap",
+    "PREMIUM_YES"                       => "Status: PREMIUM ACCOUNT",
+    "PREMIUM_NO"                        => "Status: STANDARD ACCOUNT",
 
     // Forms
 

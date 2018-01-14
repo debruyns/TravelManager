@@ -16,6 +16,7 @@ RewriteRule ^account/profile/?$    ./profile.php    [NC,L]
 RewriteRule ^account/language?$    ./language.php    [NC,L]
 RewriteRule ^account/password?$    ./password.php    [NC,L]
 RewriteRule ^account/verification?$    ./twostep.php    [NC,L]
+RewriteRule ^account/premium?$    ./premium.php    [NC,L]
 
 RewriteRule ^resetpassword/(.*)$ ./resetpassword.php?code=$1 [NC,L]
 RewriteRule ^activateaccount/(.*)$ ./activate.php?code=$1 [NC,L]

@@ -105,6 +105,7 @@ $i18n = array(
     "PAGE_TITLE_LANGUAGE"               => "Change Language",
     "PAGE_TITLE_PASSWORD"               => "Change Password",
     "PAGE_TITLE_TWOSTEP"                => "2-Step Verification",
+    "PAGE_TITLE_PREMIUM"                => "Premium Membership",
 
     // Account
 
@@ -159,6 +160,12 @@ $i18n = array(
     "TWOSTEP_CODE_INVALID"              => "Authentication code invalid",
     "TWOSTEP_TECH_ERROR"                => "An error has occurred, please try again",
     "TWOSTEP_CHANGE_SUCCESS"            => "Your 2-Step Verification settings have been successfully updated",
+
+    // Premium
+
+    "PREMIUM_TITLE"                     => "Premium Membership",
+    "PREMIUM_YES"                       => "Status: PREMIUM ACCOUNT",
+    "PREMIUM_NO"                        => "Status: STANDARD ACCOUNT",
 
     // Forms
 
