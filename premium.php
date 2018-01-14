@@ -13,7 +13,7 @@
       echo "<h3>".$i18n['PREMIUM_NO']."</h3>";
     }
   ?>
-  <div id="dropin-container"></div>
+  <div class="payment-container"><div id="dropin-container"></div></div>
   <button class="save" id="profile_button"><?= $i18n['FORM_PAY']; ?></button>
   <a href="/account" class="cancel"><?= $i18n['FORM_CANCEL']; ?></a>
 </div>
