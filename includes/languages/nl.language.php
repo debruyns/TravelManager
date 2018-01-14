@@ -165,11 +165,12 @@ $i18n = array(
 
     "PREMIUM_TITLE"                     => "Premium Lidmaatschap",
     "PREMIUM_YES"                       => "Status: <b>PREMIUM ACCOUNT</b> (Vervalt op",
-    "PREMIUM_NO"                        => "Status: <b>STANDARD ACCOUNT</b>",
+    "PREMIUM_NO"                        => "Status: <b>STANDAARD ACCOUNT</b>",
 
     // Forms
 
     "FORM_SAVE_CHANGES"                 => "Opslaan",
-    "FORM_CANCEL"                       => "Annuleer"
+    "FORM_CANCEL"                       => "Annuleer",
+    "FORM_PAY"                          => "Betalen"
 
 );

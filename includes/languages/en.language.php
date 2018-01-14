@@ -170,6 +170,7 @@ $i18n = array(
     // Forms
 
     "FORM_SAVE_CHANGES"                 => "Save Changes",
-    "FORM_CANCEL"                       => "Cancel"
+    "FORM_CANCEL"                       => "Cancel",
+    "FORM_PAY"                          => "Pay"
 
 );

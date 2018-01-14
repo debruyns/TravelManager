@@ -1,5 +1,6 @@
 <!-- Include template header -->
 <?php include_once('includes/template/header.tpl.php'); ?>
+<script src="js/premium.js"></script>
 
 <h1 class="page-title"><?= $i18n['PREMIUM_TITLE']; ?></h1>
 
@@ -12,7 +13,8 @@
       echo "<h3>".$i18n['PREMIUM_NO']."</h3>";
     }
   ?>
-  <button class="save" id="profile_button"><?= $i18n['FORM_SAVE_CHANGES']; ?></button>
+  <div id="dropin-container"></div>
+  <button class="save" id="profile_button"><?= $i18n['FORM_PAY']; ?></button>
   <a href="/account" class="cancel"><?= $i18n['FORM_CANCEL']; ?></a>
 </div>
 
