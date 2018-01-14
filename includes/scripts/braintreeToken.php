@@ -3,7 +3,7 @@
 // Root location
 $path = $_SERVER['DOCUMENT_ROOT'];
 
-require_once($path . "/includes/payments/lib/Braintree.php");
+//require_once($path . "/includes/payments/lib/Braintree.php");
 
 /*Braintree_Configuration::environment('sandbox');
 Braintree_Configuration::merchantId('mbc2kjh4pdqf3xht');
