@@ -308,6 +308,7 @@ div.form-container {
   width: 90%;
   max-width: 850px;
   height: auto;
+  background: #FFF;
   border: 1px #363C48 solid;
   border-radius: 3px;
   text-align: center;
@@ -364,6 +365,11 @@ div.form-container > div.success-message {
     margin: 0 auto;
     text-align: center;
     margin-top: 10px;
+}
+
+div.form-container > div.dropin-container {
+  width: 90%;
+  height: auto;
 }
 
 div.form-container > .form-element {
