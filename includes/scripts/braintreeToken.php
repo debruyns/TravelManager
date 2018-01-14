@@ -3,6 +3,8 @@
 // Root location
 $path = $_SERVER['DOCUMENT_ROOT'];
 
+echo $path;
+
 //require_once($path . "/includes/payments/lib/Braintree.php");
 
 /*Braintree_Configuration::environment('sandbox');
